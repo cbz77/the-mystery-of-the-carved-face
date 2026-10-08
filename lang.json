@@ -40,12 +40,12 @@
   "en": "Load game"
  },
  "ending.heading": {
-  "cz": "Konec hry",
-  "en": "Game over"
+  "cz": "Konec",
+  "en": "The End"
  },
  "ending.restart": {
-  "cz": "Restartovat hru",
-  "en": "Restart game"
+  "cz": "Hrát znovu",
+  "en": "Play again"
  },
  "denik.heading": {
   "cz": "...předchozí záznamy jsou nečitelné...",
@@ -228,8 +228,8 @@
   "en": "The entrance to the cave is now open."
  },
  "ending.text": {
-  "cz": "Takhle končí tvůj příběh...<br><br>",
-  "en": "This is how your story ends...<br><br>"
+  "cz": "Takhle končí tvůj příběh...<br><br>Těžký balvan dopadl na zem s ohlušujícím rachotem a pohltil i poslední paprsek světla. Zůstal jsi sám v temnotě, uvězněn v chladné jeskyni s hrobem krále Attily a černou paní Barborou.<br><br>Není radno si zahrávat s pradávnými kletbami a prozkoumávat sám dávné legendy...<br><br>Teď už zbývá jen doufat, že si vytesané tváře na starém kameni všimne jiný bláhový dobrodruh.<br><br>Jenže... bude černý klíč stále na svém místě? A bude stejně dychtivý záhadu rozluštit, stejně jako ty?",
+  "en": "This is how your story ends...<br><br>A heavy boulder crashed to the ground with a deafening roar, swallowing the last ray of light. You were left alone in the darkness, trapped in a cold cave with the tomb of King Attila and the Black Barbora.<br><br>It is unwise to meddle with ancient curses and explore old legends on your own...<br><br>Now all you can do is hope that another foolish adventurer will notice the carved face on the old stone.<br><br>But... will the black key still be in its place? And will they be just as eager to solve the mystery as you were?"
  },
  "cave.first_arrival": {
   "cz": "Proboha! To je snad Černá Barbora! <br> Četl jsem o jejím příběhu... ale myslel jsem, že je to pouze pověra!",
