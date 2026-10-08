@@ -13,7 +13,7 @@
 // =====================================================================
 
 const LANG_FILE = 'lang.json';
-const DEFAULT_LANG = 'cz';
+const DEFAULT_LANG = 'en';
 const SUPPORTED_LANGS = ['cz', 'en'];
 
 let LANG_DATA = {};
