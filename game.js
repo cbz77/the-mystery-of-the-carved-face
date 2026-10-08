@@ -16,7 +16,7 @@ const INVENTORY_ITEMS = {
 	'dubovy_list': { name: 'item.dubovy_list.name', icon: 'fa-leaf', tooltip: 'item.dubovy_list.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/list.png' class='inventory_img'>" },
 	'kriz_z_hrobu': { name: 'item.kriz_z_hrobu.name', icon: 'fa-cross', tooltip: 'item.kriz_z_hrobu.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/kriz.png' class='inventory_img'>" },
 	'koruna': { name: 'item.koruna.name', icon: 'fa-crown', tooltip: 'item.koruna.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/koruna.png' class='inventory_img'>" },
-	'mapa': { name: 'item.mapa.name', icon: 'fa-map', tooltip: 'item.mapa.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>" },
+	'mapa': { name: 'item.mapa.name', icon: 'fa-map', tooltip: 'item.mapa.tooltip', type: "image", popupText: 'item.mapa.imgtag' },
 	'erb': { name: 'item.erb.name', icon: 'fa-shield', tooltip: 'item.erb.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/erb.png' class='inventory_img'>" },
 	'strep': { name: 'item.strep.name', icon: 'fa-icicles', tooltip: 'item.strep.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/strepy.png' class='inventory_img'>" },
 	'lopatka': { name: 'item.lopatka.name', icon: 'fa-arrow-pointer', tooltip: 'item.lopatka.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/lopatka.png' class='inventory_img'>" },

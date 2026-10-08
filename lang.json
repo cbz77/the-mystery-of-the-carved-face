@@ -1151,6 +1151,10 @@
   "cz": "Mapa",
   "en": "Map"
  },
+ "item.mapa.imgtag": {
+  "cz": "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>",
+  "en": "<img src='../assets/images/inventory/mapa-en.png' class='inventory_img'>"
+ },
  "item.mapa.tooltip": {
   "cz": "Mapa z vrcholu Štandlu.",
   "en": "A map from the summit of Štandl."
