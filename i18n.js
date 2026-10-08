@@ -97,8 +97,8 @@ document.addEventListener('click', e => {
 	if (el) {
 		e.preventDefault();
 		setLang(el.getAttribute('data-lang'));
+		location.reload();
 	}
-	location.reload();
 });
 
 // Načtení překladů - game.js na tento promise čeká v window.onload
