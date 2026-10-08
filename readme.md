@@ -10,4 +10,4 @@ Explore your surroundings, collect clues and solve puzzles to uncover the myster
 
 
 
-© 2025 Jan Gerek
+© 2026 Jan Gerek
