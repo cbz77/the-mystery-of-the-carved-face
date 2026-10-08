@@ -11,17 +11,17 @@ if(saved_game == null || saved_game == "") this.localStorage.setItem("saved_game
 
 // Definice předmětů v inventáři pro snazší správu (id, jméno, ikona)
 const INVENTORY_ITEMS = {
-	'vizitka': { name: 'Vizitka', icon: 'fa-address-card', tooltip: 'Zašlá vizitka, jméno někdo začmáral, ale adresa směřuje někam pod zámek do Frýdku.', type: "image", popupText: "<img src='../assets/images/inventory/vizitka.png' class='inventory_img'>" },
-	'cerny_klic': { name: 'Černý klíč', icon: 'fa-key', tooltip: 'Starý, černý klíč. Nalezený archeologem při vykopávkách pod Štandlem.' },
-	'dubovy_list': { name: 'Nákres listu', icon: 'fa-leaf', tooltip: 'Nákres reliéfu dubového listu, který byl na soše na místeckém náměstí.', type: "image", popupText: "<img src='../assets/images/inventory/list.png' class='inventory_img'>" },
-	'kriz_z_hrobu': { name: 'Nákres kříže', icon: 'fa-cross', tooltip: 'Nákres Kříže z náhrobku u kostela sv. Jošta.', type: "image", popupText: "<img src='../assets/images/inventory/kriz.png' class='inventory_img'>" },
-	'koruna': { name: 'Nákres koruny', icon: 'fa-crown', tooltip: 'Královská koruna, která byla vyryta na zámecké věži.', type: "image", popupText: "<img src='../assets/images/inventory/koruna.png' class='inventory_img'>" },
-	'mapa': { name: 'Mapa', icon: 'fa-map', tooltip: 'Mapa z vrcholu Štandlu.', type: "image", popupText: "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>" },
-	'erb': { name: 'Nákres Erbu', icon: 'fa-shield', tooltip: 'Erb z kamene, nalezený ve vykopávkách staré Lipiny.', type: "image", popupText: "<img src='../assets/images/inventory/erb.png' class='inventory_img'>" },
-	'strep': { name: 'Střepy', icon: 'fa-icicles', tooltip: 'Keramické střepy, nalezené v kameném pomníku.', type: "image", popupText: "<img src='../assets/images/inventory/strepy.png' class='inventory_img'>" },
-	'lopatka': { name: 'Lopatka', icon: 'fa-arrow-pointer', tooltip: 'Stará lopatka, nalezená u vykopávek.', type: "image", popupText: "<img src='../assets/images/inventory/lopatka.png' class='inventory_img'>" },
-	'denik': { name: 'Deník', icon: 'fa-book', tooltip: 'Potrhaný deník, ležel u těla Černé Barbory v tajné jeskyni.', type: "denik" },
-	'kniha': { name: 'Kniha', icon: 'fa-book-open', tooltip: 'Starodávná kniha o Štandlu. <br>Je v ní mnoho zajímavostí a pověstí.', type: "kniha" },
+	'vizitka': { name: 'item.vizitka.name', icon: 'fa-address-card', tooltip: 'item.vizitka.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/vizitka.png' class='inventory_img'>" },
+	'cerny_klic': { name: 'item.cerny_klic.name', icon: 'fa-key', tooltip: 'item.cerny_klic.tooltip' },
+	'dubovy_list': { name: 'item.dubovy_list.name', icon: 'fa-leaf', tooltip: 'item.dubovy_list.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/list.png' class='inventory_img'>" },
+	'kriz_z_hrobu': { name: 'item.kriz_z_hrobu.name', icon: 'fa-cross', tooltip: 'item.kriz_z_hrobu.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/kriz.png' class='inventory_img'>" },
+	'koruna': { name: 'item.koruna.name', icon: 'fa-crown', tooltip: 'item.koruna.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/koruna.png' class='inventory_img'>" },
+	'mapa': { name: 'item.mapa.name', icon: 'fa-map', tooltip: 'item.mapa.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>" },
+	'erb': { name: 'item.erb.name', icon: 'fa-shield', tooltip: 'item.erb.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/erb.png' class='inventory_img'>" },
+	'strep': { name: 'item.strep.name', icon: 'fa-icicles', tooltip: 'item.strep.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/strepy.png' class='inventory_img'>" },
+	'lopatka': { name: 'item.lopatka.name', icon: 'fa-arrow-pointer', tooltip: 'item.lopatka.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/lopatka.png' class='inventory_img'>" },
+	'denik': { name: 'item.denik.name', icon: 'fa-book', tooltip: 'item.denik.tooltip', type: "denik" },
+	'kniha': { name: 'item.kniha.name', icon: 'fa-book-open', tooltip: 'item.kniha.tooltip', type: "kniha" },
 };
 
 const ikona_stopa = '<br><br><i class="fa-solid fa-puzzle-piece color-red"></i> ';
@@ -29,93 +29,93 @@ const ikona_stopa = '<br><br><i class="fa-solid fa-puzzle-piece color-red"></i> 
 const MAP = {
 
 	zacatek_cesty: {
-		name: "Začátek cesty",
-		N: { img: `../assets/bgr/zacatek/zacatek_N.png`, pohled: "stromy", items: [
-			{ x: 380, y: 300, text: "Kříž tady stojí od pradávna.", type: 'text' }
+		name: 'area.zacatek_cesty.name',
+		N: { img: `../assets/bgr/zacatek/zacatek_N.png`, pohled: 'area.zacatek_cesty.N.pohled', items: [
+			{ x: 380, y: 300, text: 'area.zacatek_cesty.N.item0', type: 'text' }
 		] },
-		E: { img: `../assets/bgr/zacatek/zacatek_E.png`, pohled: "k lesní křižovatce", forward: "lesni_krizovatka", items: [
-			{ x: 450, y: 400, text: "Stará a rozpadlá závora brání vjezdu do lesů.", type: 'text' }
+		E: { img: `../assets/bgr/zacatek/zacatek_E.png`, pohled: 'area.zacatek_cesty.E.pohled', forward: "lesni_krizovatka", items: [
+			{ x: 450, y: 400, text: 'area.zacatek_cesty.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/zacatek/zacatek_W.png`, pohled: "zpátky domů", items: [
-			{ x: 400, y: 400, text: "Zpátky se vrátím, až záhadu vyřeším.", type: 'text' }
+		W: { img: `../assets/bgr/zacatek/zacatek_W.png`, pohled: 'area.zacatek_cesty.W.pohled', items: [
+			{ x: 400, y: 400, text: 'area.zacatek_cesty.W.item0', type: 'text' }
 		] },
-		S: { img: `../assets/bgr/zacatek/zacatek_S.png`, pohled: "turistický ukazatel", items: [
-			{ x: 650, y: 165, text: "Jdu správně.", type: 'text' }
+		S: { img: `../assets/bgr/zacatek/zacatek_S.png`, pohled: 'area.zacatek_cesty.S.pohled', items: [
+			{ x: 650, y: 165, text: 'area.zacatek_cesty.S.item0', type: 'text' }
 		] },
 	},
 
 	lesni_krizovatka: {
-		name: "Rozcestí u křížku",
-		N: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_N.png`, pohled: "severní stezka", forward: "cesta_pole", items: [
-			{ x: 120, y: 250, text: "Kamenná socha tiše pozoruje návštěvníky lesa.", type: 'text' },
+		name: 'area.lesni_krizovatka.name',
+		N: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_N.png`, pohled: 'area.lesni_krizovatka.N.pohled', forward: "cesta_pole", items: [
+			{ x: 120, y: 250, text: 'area.lesni_krizovatka.N.item0', type: 'text' },
 		] },
-		E: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_E.png`, pohled: "hustý les", items: [] },
-		W: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_W.png`, pohled: "k začátku cesty", forward: "zacatek_cesty", items: [] },
-		S: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_S.png`, pohled: "jižní stezka", forward: "upati_standlu", items: [
-			{ x: 650, y: 400, text: "Zrezivělé kolo, dávno opuštěné svým majitelem, zde chátrá v lese.", type: 'text' },
+		E: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_E.png`, pohled: 'area.lesni_krizovatka.E.pohled', items: [] },
+		W: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_W.png`, pohled: 'area.lesni_krizovatka.W.pohled', forward: "zacatek_cesty", items: [] },
+		S: { img: `../assets/bgr/lesni_krizovatka/lesni_krizovatka_S.png`, pohled: 'area.lesni_krizovatka.S.pohled', forward: "upati_standlu", items: [
+			{ x: 650, y: 400, text: 'area.lesni_krizovatka.S.item0', type: 'text' },
 		] },
 	},
 
 	/* SEVERNI STEZKA */
 
 	cesta_pole: {
-		name: "Cesta kolem pole",
-		N: { img: `../assets/bgr/cesta_pole/cesta_pole_N.png`, pohled: "dále kolem pole", forward: "stara_lipina", items: [
-			{ x: 260, y: 360, text: "Starý traktor. Kdysi býval pýchou polí, teď je to jen těžký rezavý vrak.", type: 'text' }
+		name: 'area.cesta_pole.name',
+		N: { img: `../assets/bgr/cesta_pole/cesta_pole_N.png`, pohled: 'area.cesta_pole.N.pohled', forward: "stara_lipina", items: [
+			{ x: 260, y: 360, text: 'area.cesta_pole.N.item0', type: 'text' }
 		] },
-		E: { img: `../assets/bgr/cesta_pole/cesta_pole_E.png`, pohled: "les", items: [] },
-		W: { img: `../assets/bgr/cesta_pole/cesta_pole_W.png`, pohled: "pole", items: [
-			{ x: 420, y: 250, text: "Starý a otrhaný strašák, nahání mi hrůzu.", type: 'text' },
-			{ x: 680, y: 520, text: "Rezavý kbelík, je prázdný.", type: 'text' },
+		E: { img: `../assets/bgr/cesta_pole/cesta_pole_E.png`, pohled: 'area.cesta_pole.E.pohled', items: [] },
+		W: { img: `../assets/bgr/cesta_pole/cesta_pole_W.png`, pohled: 'area.cesta_pole.W.pohled', items: [
+			{ x: 420, y: 250, text: 'area.cesta_pole.W.item0', type: 'text' },
+			{ x: 680, y: 520, text: 'area.cesta_pole.W.item1', type: 'text' },
 
 		] },
-		S: { img: `../assets/bgr/cesta_pole/cesta_pole_S.png`, pohled: "k rozcestí", forward: "lesni_krizovatka", items: [] },
+		S: { img: `../assets/bgr/cesta_pole/cesta_pole_S.png`, pohled: 'area.cesta_pole.S.pohled', forward: "lesni_krizovatka", items: [] },
 	},
 
 	stara_lipina: {
-		name: "Mýtina",
-		N: { img: `../assets/bgr/lipina/lipina_N.png`, pohled: "lesní obora", items: [
-			{ x: 500, y: 300, text: "Stará myslivecká věž, nepatřičně trčí uprostřed obory…", type: 'text' }
+		name: 'area.stara_lipina.name',
+		N: { img: `../assets/bgr/lipina/lipina_N.png`, pohled: 'area.stara_lipina.N.pohled', items: [
+			{ x: 500, y: 300, text: 'area.stara_lipina.N.item0', type: 'text' }
 		] },
-		E: { img: `../assets/bgr/lipina/lipina_E2.png`, pohled: "k lesu", forward: "les_u_vykopavek", items: [
-			{ x: 120, y: 220, text: "Zkorodovaná cedule na pahýlu stromu. <br>Možná je lepší nevědět, před čím varovala.", type: 'text' }
+		E: { img: `../assets/bgr/lipina/lipina_E2.png`, pohled: 'area.stara_lipina.E.pohled', forward: "les_u_vykopavek", items: [
+			{ x: 120, y: 220, text: 'area.stara_lipina.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/lipina/lipina_W.png`, pohled: "odbočka k poli", forward: "cesta_pole", items: [
-			{ x: 685, y: 400, text: "Pomník připomíná temnou událost, jež zde v roce 1886 otiskla svůj chladný stín. Jako by bolest tehdejšího dne dodnes prostupovala okolním tichem.", type: 'text' }
+		W: { img: `../assets/bgr/lipina/lipina_W.png`, pohled: 'area.stara_lipina.W.pohled', forward: "cesta_pole", items: [
+			{ x: 685, y: 400, text: 'area.stara_lipina.W.item0', type: 'text' }
 		] },
-		S: { img: `../assets/bgr/lipina/lipina_S.png`, pohled: "oblast bývalé lipiny", items: [
-			{ x: 400, y: 300, text: "Na tomto místě se kdysi rozkládala ves Frýdberk. Po jejích obydlích i lidech zůstala jen prázdnota a pár terénních nerovností.", type: 'text' }
+		S: { img: `../assets/bgr/lipina/lipina_S.png`, pohled: 'area.stara_lipina.S.pohled', items: [
+			{ x: 400, y: 300, text: 'area.stara_lipina.S.item0', type: 'text' }
 		] },
 	},
 
 	les_u_vykopavek: {
-		name: "Uprostřed lesa",
-		N: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_N.png`, pohled: "smrkový les", items: [
-			{ x: 400, y: 400, text: "Kolečka plná hlíny úplně obrostla ostružiním.", type: 'text' }
+		name: 'area.les_u_vykopavek.name',
+		N: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_N.png`, pohled: 'area.les_u_vykopavek.N.pohled', items: [
+			{ x: 400, y: 400, text: 'area.les_u_vykopavek.N.item0', type: 'text' }
 		] },
-		E: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_E.png`, pohled: "závora přes cestu", items: [
-			{ x: 455, y: 365, text: "Zrezivělá závora brání cestě dál. Za ní se rozprostírá bývalý vojenský prostor.", type: 'text' }
+		E: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_E.png`, pohled: 'area.les_u_vykopavek.E.pohled', items: [
+			{ x: 455, y: 365, text: 'area.les_u_vykopavek.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_W.png`, pohled: "cesta na mýtinu", forward: "stara_lipina", items: [] },
-		S: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_S.png`, pohled: "staré vykopávky", forward: "vykopavky", items: [
-			{ x: 140, y: 310, text: "Cedule zakazuje vstup na archeologické vykopávky. <br> Musím se dozvědět, co skrývají!", type: 'text' },
-			{ x: 400, y: 400, text: "Nedávno zde archeologové odkrývali pozůstatky tvrze Lipina, která tady stávala.", type: 'text' }
+		W: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_W.png`, pohled: 'area.les_u_vykopavek.W.pohled', forward: "stara_lipina", items: [] },
+		S: { img: `../assets/bgr/les_u_vykopavek/les_u_vykopavek_S.png`, pohled: 'area.les_u_vykopavek.S.pohled', forward: "vykopavky", items: [
+			{ x: 140, y: 310, text: 'area.les_u_vykopavek.S.item0', type: 'text' },
+			{ x: 400, y: 400, text: 'area.les_u_vykopavek.S.item1', type: 'text' }
 		] },
 	},
 
 	vykopavky: {
-		name: "Vykopávky na bývalé Lipině",
-		N: { img: `../assets/bgr/vykopavky/vykopavky_N.png`, pohled: "zpět do lesa", forward: "les_u_vykopavek", items: [] },
-		E: { img: `../assets/bgr/vykopavky/vykopavky_E.png`, pohled: "okolí vykopávek", items: [
-			{ x: 460, y: 320, text: "Lopatka zaražená v zemi. Vezmu si ji.", itemKey: "lopatka", type: 'item' }
+		name: 'area.vykopavky.name',
+		N: { img: `../assets/bgr/vykopavky/vykopavky_N.png`, pohled: 'area.vykopavky.N.pohled', forward: "les_u_vykopavek", items: [] },
+		E: { img: `../assets/bgr/vykopavky/vykopavky_E.png`, pohled: 'area.vykopavky.E.pohled', items: [
+			{ x: 460, y: 320, text: 'area.vykopavky.E.item0', itemKey: "lopatka", type: 'item' }
 		] },
-		W: { img: `../assets/bgr/vykopavky/vykopavky_W.png`, pohled: "okolí vykopávek", items: [
-			{ x: 410, y: 300, text: "Na zemi leží březová větev. V okolí plném smrků působí jako nezvaný vetřelec.", type: 'text' }
+		W: { img: `../assets/bgr/vykopavky/vykopavky_W.png`, pohled: 'area.vykopavky.E.pohled', items: [
+			{ x: 410, y: 300, text: 'area.vykopavky.W.item0', type: 'text' }
 		] },
 		S: {
-			img: `../assets/bgr/vykopavky/vykopavky_S.png`, pohled: "opuštěné vykopávky", items: [
-				{ x: 515, y: 235, text: "Ve výkopu ležela stará vizitka <br><br> <img src='assets/bgr/vykopavky/vizitka_hlina.png' class='inventory_img' onclick='event.stopPropagation(); showLightbox(\"assets/bgr/vykopavky/vizitka_hlina.png\")'>" + ikona_stopa + " Získali jste stopu <span class='color-lighter-red'>Zašlá vizitka.</span>", itemKey: 'vizitka', type: 'item' },
-				{ x: 135, y: 215, text: "V kameni se rýsuje zašlý středověký erb. Čas už ohlodal jeho obrysy. Nakreslím si ho.<br><br> <img src='assets/bgr/vykopavky/kamen_erb.png' class='inventory_img' onclick='event.stopPropagation(); showLightbox(\"assets/bgr/vykopavky/kamen_erb.png\")'>" + ikona_stopa + " Získali jste stopu <span class='color-lighter-red'>kamenný erb.</span>", type: 'item', itemKey: "erb" }
+			img: `../assets/bgr/vykopavky/vykopavky_S.png`, pohled: 'area.vykopavky.S.pohled', items: [
+				{ x: 515, y: 235, text: 'area.vykopavky.S.item0', itemKey: 'vizitka', type: 'item' },
+				{ x: 135, y: 215, text: 'area.vykopavky.S.item1', type: 'item', itemKey: "erb" }
 			]
 		},
 		
@@ -124,171 +124,171 @@ const MAP = {
 	/* JIZNI STEZKA */
 
 	upati_standlu: {
-		name: "Úpatí Štandlu",
-		N: { img: `../assets/bgr/upati_standlu/upati_standlu_N.png`, pohled: "na lesní křižovatku", forward: "lesni_krizovatka", items: []},
+		name: 'area.upati_standlu.name',
+		N: { img: `../assets/bgr/upati_standlu/upati_standlu_N.png`, pohled: 'area.upati_standlu.N.pohled', forward: "lesni_krizovatka", items: []},
 		E: {
-			img: `../assets/bgr/upati_standlu/upati_standlu_E2.png`, pohled: "na vrchol štandlu", forward: "vrchol_standlu",
+			img: `../assets/bgr/upati_standlu/upati_standlu_E2.png`, pohled: 'area.upati_standlu.E.pohled', forward: "vrchol_standlu",
 			items: [
-				{ x: 500, y: 320, text: "Cesta se vine vzhůru k vrcholu, pomalu mizí v šeru lesa.", type: 'text' },
-				{ x: 280, y: 420, text: "Na lesní lavičce zůstaly odložené prázdné lahve od piva.", type: 'text' },
+				{ x: 500, y: 320, text: 'area.upati_standlu.E.item0', type: 'text' },
+				{ x: 280, y: 420, text: 'area.upati_standlu.E.item1', type: 'text' },
 			]
 		},
-		W: { img: `../assets/bgr/upati_standlu/upati_standlu_W.png`, pohled: "les", items: [] },
-		S: { img: `../assets/bgr/upati_standlu/upati_standlu_S.png`, pohled: "lesní pěšina", forward: "lesni_pesina", items: [] },
+		W: { img: `../assets/bgr/upati_standlu/upati_standlu_W.png`, pohled: 'area.cesta_pole.E.pohled', items: [] },
+		S: { img: `../assets/bgr/upati_standlu/upati_standlu_S.png`, pohled: 'area.upati_standlu.S.pohled', forward: "lesni_pesina", items: [] },
 	},
 	lesni_pesina: {
-		name: "Lesní pěšina",
-		N: { img: `../assets/bgr/lesni_pesina/lesni_pesina_N.png`, pohled: "k úpatí Štandlu", forward: "upati_standlu", items: [] },
-		E: { img: `../assets/bgr/lesni_pesina/lesni_pesina_E.png`, pohled: "březový les", items: [
-			{ x: 200, y: 300, text: "Pěkně naskládané hromady dřeva.", type: 'text' }
+		name: 'area.lesni_pesina.name',
+		N: { img: `../assets/bgr/lesni_pesina/lesni_pesina_N.png`, pohled: 'area.lesni_pesina.N.pohled', forward: "upati_standlu", items: [] },
+		E: { img: `../assets/bgr/lesni_pesina/lesni_pesina_E.png`, pohled: 'area.lesni_pesina.E.pohled', items: [
+			{ x: 200, y: 300, text: 'area.lesni_pesina.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/lesni_pesina/lesni_pesina_W.png`, pohled: "hustý les", items: [] },
-		S: { img: `../assets/bgr/lesni_pesina/lesni_pesina_S.png`, pohled: "dál pěšinou", forward: "prudky_svah", items: [
-			{ x: 180, y: 300, text: "Na zetlelém pařezu stojí prázdné krmítko. Nikdo ho už nedoplňuje a ani ptáci se sem dávno nevracejí.", type: 'text' }
+		W: { img: `../assets/bgr/lesni_pesina/lesni_pesina_W.png`, pohled: 'area.lesni_krizovatka.E.pohled', items: [] },
+		S: { img: `../assets/bgr/lesni_pesina/lesni_pesina_S.png`, pohled: 'area.lesni_pesina.S.pohled', forward: "prudky_svah", items: [
+			{ x: 180, y: 300, text: 'area.lesni_pesina.S.item0', type: 'text' }
 		] },
 	},
 	prudky_svah: {
-		name: "U potoka",
-		N: { img: `../assets/bgr/prudky_svah/prudky_svah_N.png`, pohled: "do prudkého svahu", items: [
-				{ x: 400, y: 300, text: "Strmý svah plný kamenů a kořenů. Tudy cesta nevede.", type: 'text' }
+		name: 'area.prudky_svah.name',
+		N: { img: `../assets/bgr/prudky_svah/prudky_svah_N.png`, pohled: 'area.prudky_svah.N.pohled', items: [
+				{ x: 400, y: 300, text: 'area.prudky_svah.N.item0', type: 'text' }
 			] 
 		},
-		E: { img: `../assets/bgr/prudky_svah/prudky_svah_E.png`, pohled: "dále kolem štandlu", forward: "pod_standlem", items: [] },
-		W: { img: `../assets/bgr/prudky_svah/prudky_svah_W.png`, pohled: "lesní pěšina", forward: "lesni_pesina", items: [
-			{ x: 450, y: 390, text: "Starodávný vůz, zdá se být stále používaný.", type: 'text' },
-			{ x: 130, y: 420, text: "Hraniční kámen, ten musí být nejméně 200 let starý.", type: 'text' },
+		E: { img: `../assets/bgr/prudky_svah/prudky_svah_E.png`, pohled: 'area.prudky_svah.E.pohled', forward: "pod_standlem", items: [] },
+		W: { img: `../assets/bgr/prudky_svah/prudky_svah_W.png`, pohled: 'area.upati_standlu.S.pohled', forward: "lesni_pesina", items: [
+			{ x: 450, y: 390, text: 'area.prudky_svah.W.item0', type: 'text' },
+			{ x: 130, y: 420, text: 'area.prudky_svah.W.item1', type: 'text' },
 		] },
-		S: { img: `../assets/bgr/prudky_svah/prudky_svah_S.png`, pohled: "potok", items: [
-			{ x: 300, y: 500, text: "Chladivá voda potoka příjemně zurčí mezi kameny.", type: 'text' },
-			{ x: 565, y: 220, text: "Přes vodu se ke kříži nedostanu. Škoda.", type: 'text' },
+		S: { img: `../assets/bgr/prudky_svah/prudky_svah_S.png`, pohled: 'area.prudky_svah.S.pohled', items: [
+			{ x: 300, y: 500, text: 'area.prudky_svah.S.item0', type: 'text' },
+			{ x: 565, y: 220, text: 'area.prudky_svah.S.item1', type: 'text' },
 		] },
 	},
 	pod_standlem: {
-		name: "Pod Štandlem",
-		N: { img: `../assets/bgr/pod_standlem/pod_standlem_N.png`, pohled: "zarostlá louka", items: [
-			{ x: 150, y: 250, text: "Starý kamenný pomník, nikdo neví, kdo ho sem postavil ", type: 'text' },
-			{ x: 200, y: 390, text: "Ve spodní části se za volným kamenem nacházelo velké množství keramických střepů. Vypadají velmi staře. <br><br><img src='assets/bgr/pod_standlem/strepy_skala.png' class='inventory_img' onclick='event.stopPropagation(); showLightbox(\"assets/bgr/pod_standlem/strepy_skala.png\")'>", itemKey: 'strep', type: 'item' },
+		name: 'area.pod_standlem.name',
+		N: { img: `../assets/bgr/pod_standlem/pod_standlem_N.png`, pohled: 'area.pod_standlem.N.pohled', items: [
+			{ x: 150, y: 250, text: 'area.pod_standlem.N.item0', type: 'text' },
+			{ x: 200, y: 390, text: 'area.pod_standlem.N.item1', itemKey: 'strep', type: 'item' },
 		] },
-		E: { img: `../assets/bgr/pod_standlem/pod_standlem_E.png`, pohled: "přes most do místku", forward: "mistecke_namesti", items: [
-			{ x: 400, y: 300, text: "Starý kamenný mostek se klene nad šumícím potokem. Cesta vede do Místku.", type: 'text' },
-			{ x: 595, y: 100, text: "Ve dne je tu světla dost.", type: 'text' },
+		E: { img: `../assets/bgr/pod_standlem/pod_standlem_E.png`, pohled: 'area.pod_standlem.E.pohled', forward: "mistecke_namesti", items: [
+			{ x: 400, y: 300, text: 'area.pod_standlem.E.item0', type: 'text' },
+			{ x: 595, y: 100, text: 'area.pod_standlem.E.item1', type: 'text' },
 		] },
-		W: { img: `../assets/bgr/pod_standlem/pod_standlem_W.png`, pohled: "na vrchol štandlu", forward: "vrchol_standlu", items: [] },
-		S: { img: `../assets/bgr/pod_standlem/pod_standlem_S.png`, pohled: "lesní cesta podél potoka", forward: "prudky_svah", items: [] },
+		W: { img: `../assets/bgr/pod_standlem/pod_standlem_W.png`, pohled: 'area.upati_standlu.E.pohled', forward: "vrchol_standlu", items: [] },
+		S: { img: `../assets/bgr/pod_standlem/pod_standlem_S.png`, pohled: 'area.pod_standlem.S.pohled', forward: "prudky_svah", items: [] },
 	},
 	vrchol_standlu: {
-		name: "Vrchol Štandlu",
-		N: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_N.png`, pohled: "cesta dolů z vrcholu", forward: "pod_standlem", items: [
-			{ x: 180, y: 420, text: "Zvláštně navršené balvany. Možná to jsou poslední zbytky hradu.", type: 'text' },
-			{ x: 670, y: 280, text: "Z hrubě otesaných kmenů někdo vztyčil dřevěný kříž.", type: 'text' }
+		name: 'area.vrchol_standlu.name',
+		N: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_N.png`, pohled: 'area.vrchol_standlu.N.pohled', forward: "pod_standlem", items: [
+			{ x: 180, y: 420, text: 'area.vrchol_standlu.N.item0', type: 'text' },
+			{ x: 670, y: 280, text: 'area.vrchol_standlu.N.item1', type: 'text' }
 		] },
-		E: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_E_mirror.png`, pohled: "val", items: [] },
-		W: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_W.png`, pohled: "k úpatí štandlu", forward: "upati_standlu", items: [
-			{ x: 200, y: 400, text: "Zrezivělé zábradlí se třese při lehkém doteku. Za ním je hluboká jáma - místo, kde kdysi stávala pevnost Štandl.", type: 'text' }
+		E: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_E_mirror.png`, pohled: 'area.vrchol_standlu.E.pohled', items: [] },
+		W: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_W.png`, pohled: 'area.vrchol_standlu.W.pohled', forward: "upati_standlu", items: [
+			{ x: 200, y: 400, text: 'area.vrchol_standlu.W.item0', type: 'text' }
 		] },
-		S: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_S.png`, pohled: "k informační ceduli", forward: "informacni_cedule", items: [] },
+		S: { img: `../assets/bgr/vrchol_standlu/vrchol_standlu_S.png`, pohled: 'area.vrchol_standlu.S.pohled', forward: "informacni_cedule", items: [] },
 	},
 	informacni_cedule: {
-		name: "Informační cedule",
-		N: { img: `../assets/bgr/informacni_cedule/informacni_cedule_N.png`, pohled: "na vrchol štandlu", forward: "vrchol_standlu", items: [] },
-		E: { img: `../assets/bgr/informacni_cedule/informacni_cedule_E.png`, pohled: "postojení", forward: "pred_tvari", items: [
-			{ x: 480, y: 250, text: "Po kamenných schodech se dá dostat na druhou stranu valu.", type: 'text' },
-			{ x: 600, y: 450, text: "V listí leží starý turistický batoh. Působí dojmem, jako by ho někdo odložil jen na chvíli... ale k jeho návratu už nedošlo.", type: 'text' },
+		name: 'area.informacni_cedule.name',
+		N: { img: `../assets/bgr/informacni_cedule/informacni_cedule_N.png`, pohled: 'area.upati_standlu.E.pohled', forward: "vrchol_standlu", items: [] },
+		E: { img: `../assets/bgr/informacni_cedule/informacni_cedule_E.png`, pohled: 'area.informacni_cedule.E.pohled', forward: "pred_tvari", items: [
+			{ x: 480, y: 250, text: 'area.informacni_cedule.E.item0', type: 'text' },
+			{ x: 600, y: 450, text: 'area.informacni_cedule.E.item1', type: 'text' },
 		] },
-		W: { img: `../assets/bgr/informacni_cedule/informacni_cedule_W.png`, pohled: "zatarasená chodba", items: [
-			{ x: 430, y: 450, text: "Chodba ve skále je zatarasena mříží. <br>Už se do ní nedá dostat. <br><br><img src='../assets/bgr/informacni_cedule/chodba_detail.png' class='inventory_img' onclick='event.stopPropagation(); showLightbox(\"assets/bgr/informacni_cedule/chodba_detail.png\")'>", type: 'text' },
-			{ x: 130, y: 420, text: "Neotevřená láhev Radegasta. S touto etiketou se však neprodává už nejméně 20 let.", type: 'text' },
+		W: { img: `../assets/bgr/informacni_cedule/informacni_cedule_W.png`, pohled: 'area.informacni_cedule.W.pohled', items: [
+			{ x: 430, y: 450, text: 'area.informacni_cedule.W.item0', type: 'text' },
+			{ x: 130, y: 420, text: 'area.informacni_cedule.W.item1', type: 'text' },
 		] },
-		S: { img: `../assets/bgr/informacni_cedule/informacni_cedule_S_mapa.png` , pohled: "informační cedule", items: [
-			{ x: 670, y: 280, text: "V rohu informační cedule se skrývala skrčená mapa.", itemKey: 'mapa', type: 'item' },
+		S: { img: `../assets/bgr/informacni_cedule/informacni_cedule_S_mapa.png` , pohled: 'area.informacni_cedule.S.pohled', items: [
+			{ x: 670, y: 280, text: 'area.informacni_cedule.S.item0', itemKey: 'mapa', type: 'item' },
 		] },
 	},
 	pred_tvari: {
-		name: "Za valem",
-		N: { img: `../assets/bgr/pred_tvari/pred_tvari_N.png`, pohled: "na vrchol štandlu", forward: "informacni_cedule", items: [] },
-		E: { img: `../assets/bgr/pred_tvari/pred_tvari_E.png`, pohled: "strmý svah", items: [
-			{ x: 350, y: 450, text: "Starodávná kovová lucerna, už je nepoužitelná.", type: 'text' }
+		name: 'area.pred_tvari.name',
+		N: { img: `../assets/bgr/pred_tvari/pred_tvari_N.png`, pohled: 'area.upati_standlu.E.pohled', forward: "informacni_cedule", items: [] },
+		E: { img: `../assets/bgr/pred_tvari/pred_tvari_E.png`, pohled: 'area.pred_tvari.E.pohled', items: [
+			{ x: 350, y: 450, text: 'area.pred_tvari.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/pred_tvari/pred_tvari_W.png`, pohled: "strmý svah", items: [] },
-		S: { img: `../assets/bgr/pred_tvari/pred_tvari_S.png`, pohled: "k lavičce", forward: "kamenny_erb", items: [
-			{ x: 580, y: 450, text: "Uprostřed strmého lesního svahu stojí osamělá, ztrouchnivělá lavička. Kdysi z ní byl krásný výhled.", type: 'text' }
+		W: { img: `../assets/bgr/pred_tvari/pred_tvari_W.png`, pohled: 'area.pred_tvari.E.pohled', items: [] },
+		S: { img: `../assets/bgr/pred_tvari/pred_tvari_S.png`, pohled: 'area.pred_tvari.S.pohled', forward: "kamenny_erb", items: [
+			{ x: 580, y: 450, text: 'area.pred_tvari.S.item0', type: 'text' }
 		] },
 	},
 
 	/* KAMENNY ERB */
 
 	kamenny_erb: {
-		name: "U velkého balvanu",
-		N: { img: `../assets/bgr/kamenny_erb/kamenny_erb_N.png`, pohled: "zpět k vrcholu", forward: "pred_tvari", items: [] },
-		E: { img: `../assets/bgr/kamenny_erb/kamenny_erb_E.png`, pohled: "roklina", items: [
-			{ x: 400, y: 500, text: "Terén zde prudce klesá, nedá se tudy jít.", type: 'text' }
+		name: 'area.kamenny_erb.name',
+		N: { img: `../assets/bgr/kamenny_erb/kamenny_erb_N.png`, pohled: 'area.kamenny_erb.N.pohled', forward: "pred_tvari", items: [] },
+		E: { img: `../assets/bgr/kamenny_erb/kamenny_erb_E.png`, pohled: 'area.kamenny_erb.E.pohled', items: [
+			{ x: 400, y: 500, text: 'area.kamenny_erb.E.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/kamenny_erb/kamenny_erb_W.png`, pohled: "k balvanu", forward: "kamenna_tvar", items: [
-			{ x: 585, y: 270, text: "Na balvanu je cosi vytesáno. <br>Musím to prozkoumat podrobněji.", type: 'text' }
+		W: { img: `../assets/bgr/kamenny_erb/kamenny_erb_W.png`, pohled: 'area.kamenny_erb.W.pohled', forward: "kamenna_tvar", items: [
+			{ x: 585, y: 270, text: 'area.kamenny_erb.W.item0', type: 'text' }
 		] },
-		S: { img: `../assets/bgr/kamenny_erb/kamenny_erb_S.png`, pohled: "strmý svah", items: [
-			{ x: 400, y: 460, text: "Cestu blokuje starý spadlý strom.", type: 'text' }
+		S: { img: `../assets/bgr/kamenny_erb/kamenny_erb_S.png`, pohled: 'area.pred_tvari.E.pohled', items: [
+			{ x: 400, y: 460, text: 'area.kamenny_erb.S.item0', type: 'text' }
 		] },
 	},
 	kamenna_tvar: {
-		name: "Kamenná tvář",
+		name: 'area.kamenna_tvar.name',
 		
-		N: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_N.png`, pohled: "pohled vedle kamene", items: [] },
-		E: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_E.png`, pohled: "zpátky", forward: "kamenny_erb", items: [] },
+		N: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_N.png`, pohled: 'area.kamenna_tvar.N.pohled', items: [] },
+		E: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_E.png`, pohled: 'area.kamenna_tvar.E.pohled', forward: "kamenny_erb", items: [] },
 		W: {
 			img: `../assets/bgr/kamenna_tvar/kamenna_tvar_W.png`,
-			pohled: "kamenná tvář",
+			pohled: 'area.kamenna_tvar.W.pohled',
 			items: [
-				{ x: 400, y: 300, text: "Tajemná tvář vytesaná do skály.", type: 'text' },
-				{ x: 635, y: 400, text: "V kameni je klíčová dírka. <br>", type: 'puzzle' },
+				{ x: 400, y: 300, text: 'area.kamenna_tvar.W.item0', type: 'text' },
+				{ x: 635, y: 400, text: 'area.kamenna_tvar.W.item1', type: 'puzzle' },
 
 			]
 		},
-		S: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_S.png`, pohled: "pohled vedle kamene", items: [] }
+		S: { img: `../assets/bgr/kamenna_tvar/kamenna_tvar_S.png`, pohled: 'area.kamenna_tvar.N.pohled', items: [] }
 	},
 	jeskyne: {
-		name: "Jeskyně ve Štandlu",
+		name: 'area.jeskyne.name',
 		
-		N: { img: `../assets/bgr/jeskyne/jeskyne_N.png`, pohled: "zbrojnice", items: [
-			{ x: 200, y: 400, text: "Na počest krále Attily zde jeho věrní spolubojovníci zanechali své zbraně. Kupodivu jsou stále v dobrém stavu.", type: 'text' }
+		N: { img: `../assets/bgr/jeskyne/jeskyne_N.png`, pohled: 'area.jeskyne.N.pohled', items: [
+			{ x: 200, y: 400, text: 'area.jeskyne.N.item0', type: 'text' }
 		] },
 		E: {
 			img: `../assets/bgr/jeskyne/jeskyne_E.png`,
-			pohled: "ven z jeskyně",
+			pohled: 'area.jeskyne.E.pohled',
 			forward: "konec"
 		},
 		W: {
 			img: `../assets/bgr/jeskyne/jeskyne_W.png`,
-			pohled: "tajemství ve štandlu",
+			pohled: 'area.jeskyne.W.pohled',
 			items: [
-				{ x: 365, y: 500, text: "Kniha - deník Černé Barbory", type: 'item', itemKey: "denik" },
-				{ x: 405, y: 285, text: "Meč je stále velmi ostrý. Ten musel být Attilův oblíbený.", type: 'text' },
-				{ x: 630, y: 300, text: "Kostra Černé Barbory. Postihl ji strašný osud, avšak do poslední chvíle si zachovala víru v Boha.", type: 'text' },
-				{ x: 440, y: 380, text: "Hrob krále Attily. Tak přece tady leží!", type: 'text' },
-				{ x: 100, y: 500, text: "Poklad krále Attily. Zas tak obrovský není.", type: 'text' },
+				{ x: 365, y: 500, text: 'area.jeskyne.W.item0', type: 'item', itemKey: "denik" },
+				{ x: 405, y: 285, text: 'area.jeskyne.W.item1', type: 'text' },
+				{ x: 630, y: 300, text: 'area.jeskyne.W.item2', type: 'text' },
+				{ x: 440, y: 380, text: 'area.jeskyne.W.item3', type: 'text' },
+				{ x: 100, y: 500, text: 'area.jeskyne.W.item4', type: 'text' },
 			]
 		},
-		S: { img: `../assets/bgr/jeskyne/jeskyne_S.png`, pohled: "pavouk", items: [
-				{ x: 560, y: 480, text: "Dobroduh zde našel svůj konec. Leží tu již věky.", type: 'text' }
+		S: { img: `../assets/bgr/jeskyne/jeskyne_S.png`, pohled: 'area.jeskyne.S.pohled', items: [
+				{ x: 560, y: 480, text: 'area.jeskyne.S.item0', type: 'text' }
 		] },
 	},
 	konec: {
-		name: "Jeskyně ve Štandlu",
+		name: 'area.jeskyne.name',
 		N: {
-			img: `../assets/bgr/temnota/temnota_N.png`, pohled: "temnota", items: [
-				{ x: 550, y: 480, text: "černočerná tma", type: 'text' }
+			img: `../assets/bgr/temnota/temnota_N.png`, pohled: 'area.konec.N.pohled', items: [
+				{ x: 550, y: 480, text: 'area.konec.N.item0', type: 'text' }
 			]
 		},
-		E: { img: `../assets/bgr/temnota/temnota_E.png`, pohled: "temnota", items: [
-				{ x: 550, y: 480, text: "černočerná tma", type: 'text' }
+		E: { img: `../assets/bgr/temnota/temnota_E.png`, pohled: 'area.konec.N.pohled', items: [
+				{ x: 550, y: 480, text: 'area.konec.N.item0', type: 'text' }
 			]
 		},
-		W: { img: `../assets/bgr/temnota/temnota_W.png`, pohled: "temnota", items: [
-				{ x: 550, y: 480, text: "černočerná tma", type: 'text' }
+		W: { img: `../assets/bgr/temnota/temnota_W.png`, pohled: 'area.konec.N.pohled', items: [
+				{ x: 550, y: 480, text: 'area.konec.N.item0', type: 'text' }
 			] 
 		},
-		S: { img: `../assets/bgr/temnota/temnota_S.png`, pohled: "temnota", items: [
-				{ x: 550, y: 480, text: "černočerná tma", type: 'text' }
+		S: { img: `../assets/bgr/temnota/temnota_S.png`, pohled: 'area.konec.N.pohled', items: [
+				{ x: 550, y: 480, text: 'area.konec.N.item0', type: 'text' }
 			]
 		},
 	},
@@ -296,107 +296,107 @@ const MAP = {
 	/* F-M */
 
 	mistecke_namesti: {
-		name: "Místecké náměstí",
-		E: { img: `../assets/bgr/namesti/namesti_E.png`, pohled: "cesta do Frýdku", forward: "frydecky_zamek", items: [] },
-		S: { img: `../assets/bgr/namesti/namesti_S.png`, pohled: "socha panny marie", forward: "socha_marie", items: [] },
-		N: { img: `../assets/bgr/namesti/namesti_N.png`, pohled: "budovy na místeckém naměstí", items: [] },
-		W: { img: `../assets/bgr/namesti/namesti_W.png`, pohled: "průchod ke štandlu", forward: "pod_standlem", items: [
-			{ x: 245, y: 330, text: "Na balkóně tohoto domu promluvil dne 3. ledna 1990 prezident Václav Havel", type: 'text' }
+		name: 'area.mistecke_namesti.name',
+		E: { img: `../assets/bgr/namesti/namesti_E.png`, pohled: 'area.mistecke_namesti.E.pohled', forward: "frydecky_zamek", items: [] },
+		S: { img: `../assets/bgr/namesti/namesti_S.png`, pohled: 'area.mistecke_namesti.S.pohled', forward: "socha_marie", items: [] },
+		N: { img: `../assets/bgr/namesti/namesti_N.png`, pohled: 'area.mistecke_namesti.N.pohled', items: [] },
+		W: { img: `../assets/bgr/namesti/namesti_W.png`, pohled: 'area.mistecke_namesti.W.pohled', forward: "pod_standlem", items: [
+			{ x: 245, y: 330, text: 'area.mistecke_namesti.W.item0', type: 'text' }
 		] },
 	},
 	socha_marie: {
-		name: "Socha Panny Marie",
+		name: 'area.socha_marie.name',
 		N: {
-			img: `../assets/bgr/socha_marie/socha_marie_N.png`, pohled: "reliéf na soše", items: [
-				{ x: 420, y: 280, text: "Na sloupu je výrazný reliéf dubového listu, raději si jej zaznamenám." + ikona_stopa + " Získali jste stopu <span class='color-lighter-red'>Dubový list.</span>", itemKey: 'dubovy_list', type: 'item' }
+			img: `../assets/bgr/socha_marie/socha_marie_N.png`, pohled: 'area.socha_marie.N.pohled', items: [
+				{ x: 420, y: 280, text: 'area.socha_marie.N.item0', itemKey: 'dubovy_list', type: 'item' }
 			]
 		},
-		E: { img: `../assets/bgr/socha_marie/socha_marie_E.png`, pohled: "okolí sochy", items: [] },
-		W: { img: `../assets/bgr/socha_marie/socha_marie_W.png`, pohled: "do středu naměstí", forward: "mistecke_namesti",items: [] },
-		S: { img: `../assets/bgr/socha_marie/socha_marie_S.png`, pohled: "před sochou", items: [] },
+		E: { img: `../assets/bgr/socha_marie/socha_marie_E.png`, pohled: 'area.socha_marie.E.pohled', items: [] },
+		W: { img: `../assets/bgr/socha_marie/socha_marie_W.png`, pohled: 'area.socha_marie.W.pohled', forward: "mistecke_namesti",items: [] },
+		S: { img: `../assets/bgr/socha_marie/socha_marie_S.png`, pohled: 'area.socha_marie.S.pohled', items: [] },
 	},
 	frydecky_zamek: {
-		name: "Frýdecký zámek",
-		E: { img: `../assets/bgr/zamek/zamek_E.png`, pohled: "zámecká zahrada", items: [] },
-		S: { img: `../assets/bgr/zamek/zamek_S.png`, pohled: "na nádvoří zámku", forward: "zamek_nadvori",  items: [] },
-		N: { img: `../assets/bgr/zamek/zamek_N.png`, pohled: "do města", items: [
-			{ x: 300, y: 450, text: "Cesta vede dále do Frýdku.", type: 'text' }
+		name: 'area.frydecky_zamek.name',
+		E: { img: `../assets/bgr/zamek/zamek_E.png`, pohled: 'area.frydecky_zamek.E.pohled', items: [] },
+		S: { img: `../assets/bgr/zamek/zamek_S.png`, pohled: 'area.frydecky_zamek.S.pohled', forward: "zamek_nadvori",  items: [] },
+		N: { img: `../assets/bgr/zamek/zamek_N.png`, pohled: 'area.frydecky_zamek.N.pohled', items: [
+			{ x: 300, y: 450, text: 'area.frydecky_zamek.N.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/zamek/zamek_W.png`, pohled: "zámeckým parkem do místku", forward: "mistecke_namesti", items: [] },
+		W: { img: `../assets/bgr/zamek/zamek_W.png`, pohled: 'area.frydecky_zamek.W.pohled', forward: "mistecke_namesti", items: [] },
 	},
 	zamek_nadvori: {
-		name: "Zámek nádvoří",
-		E: { img: `../assets/bgr/zamek_nadvori/nadvori_E.png`, pohled: "bránou na náměstí", forward: "zamek_namesti", },
-		S: { img: `../assets/bgr/zamek_nadvori/nadvori_S.png`, pohled: "zámecké nádvoří", items: [
-			{ x: 600, y: 300, text: "Nádvoří zeje prázdnotou.", type: 'text' }
+		name: 'area.zamek_nadvori.name',
+		E: { img: `../assets/bgr/zamek_nadvori/nadvori_E.png`, pohled: 'area.zamek_nadvori.E.pohled', forward: "zamek_namesti", },
+		S: { img: `../assets/bgr/zamek_nadvori/nadvori_S.png`, pohled: 'area.zamek_nadvori.S.pohled', items: [
+			{ x: 600, y: 300, text: 'area.zamek_nadvori.S.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/zamek_nadvori/nadvori_W.png`, pohled: "k věži", forward: "vez", items: [
-			{ x: 350, y: 200, text: "Věž frýdeckého zámku. Vznikla při přestavbě zámku po roce 1688.", type: 'text' }
+		W: { img: `../assets/bgr/zamek_nadvori/nadvori_W.png`, pohled: 'area.zamek_nadvori.W.pohled', forward: "vez", items: [
+			{ x: 350, y: 200, text: 'area.zamek_nadvori.W.item0', type: 'text' }
 		] },
-		N: { img: `../assets/bgr/zamek_nadvori/nadvori_N.png`, pohled: "před frýdecký zámek", forward: "frydecky_zamek", items: [] },
+		N: { img: `../assets/bgr/zamek_nadvori/nadvori_N.png`, pohled: 'area.zamek_nadvori.N.pohled', forward: "frydecky_zamek", items: [] },
 	},
 	vez: {
-		name: "Zámecká věž",
+		name: 'area.vez.name',
 		W: {
-			img: `../assets/bgr/zamek_nadvori/vez/koruna.png`, pohled: "stěna pod věží", items: [
-				{ x: 330, y: 240, text: "Na jedné cihle je vytesaný symbol, který připomíná královskou korunu. Nakreslím si to. " + ikona_stopa + " Získali jste stopu <span class='color-lighter-red'>Královská koruna</span>", itemKey: 'koruna', type: 'item' }
+			img: `../assets/bgr/zamek_nadvori/vez/koruna.png`, pohled: 'area.vez.W.pohled', items: [
+				{ x: 330, y: 240, text: 'area.vez.W.item0', itemKey: 'koruna', type: 'item' }
 			]
 		},
-		S: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_S.png`, pohled: "vedle věže vlevo", items: [] },
-		N: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_N.png`, pohled: "vedle věže vpravo", items: [] },
-		E: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_E.png`, pohled: "zpět na nádvoří", forward: "zamek_nadvori", items: [] },
+		S: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_S.png`, pohled: 'area.vez.S.pohled', items: [] },
+		N: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_N.png`, pohled: 'area.vez.N.pohled', items: [] },
+		E: { img: `../assets/bgr/zamek_nadvori/vez/vedle_veze_E.png`, pohled: 'area.vez.E.pohled', forward: "zamek_nadvori", items: [] },
 	},
 	zamek_namesti: {
-		name: "Zámecké náměstí",
-		E: { img: `../assets/bgr/zamek_namesti/zamek_namesti_E.png`, pohled: "ke kostelu", forward: "kostel_josta", items: [] },
-		S: { img: `../assets/bgr/zamek_namesti/zamek_namesti_S.png`, pohled: "budovy", items: [] },
-		N: { img: `../assets/bgr/zamek_namesti/zamek_namesti_N.png`, pohled: "kašna", items: [
-			{ x: 430, y: 350, text: "Kašna se sochou sv. Floriána. <br>V kašně plave několik listů a větviček. Voda je ale čistá.", type: 'text' },
-			{ x: 530, y: 170, text: "Svatojánská věž se tyčí nad náměstím.", type: 'text' }
+		name: 'area.zamek_namesti.name',
+		E: { img: `../assets/bgr/zamek_namesti/zamek_namesti_E.png`, pohled: 'area.zamek_namesti.E.pohled', forward: "kostel_josta", items: [] },
+		S: { img: `../assets/bgr/zamek_namesti/zamek_namesti_S.png`, pohled: 'area.zamek_namesti.S.pohled', items: [] },
+		N: { img: `../assets/bgr/zamek_namesti/zamek_namesti_N.png`, pohled: 'area.zamek_namesti.N.pohled', items: [
+			{ x: 430, y: 350, text: 'area.zamek_namesti.N.item0', type: 'text' },
+			{ x: 530, y: 170, text: 'area.zamek_namesti.N.item1', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/zamek_namesti/zamek_namesti_W.png`, pohled: "do zámku", forward: "zamek_nadvori", items: [
-			{ x: 400, y: 300, text: "Frýdecký zámek, stojí zde již od druhé poloviny 13. století.", type: 'text' }
+		W: { img: `../assets/bgr/zamek_namesti/zamek_namesti_W.png`, pohled: 'area.zamek_namesti.W.pohled', forward: "zamek_nadvori", items: [
+			{ x: 400, y: 300, text: 'area.zamek_namesti.W.item0', type: 'text' }
 		] },
 	},
 	kostel_josta: {
-		name: "Kostel sv. Jošta",
-		E: { img: `../assets/bgr/jost/jost_E.png`, pohled: "vstup do kostela", items: [
-			{ x: 650, y: 380, text: "Pozdně renesanční stavba z roku 1612. <br> Okolní park do konce 19. století sloužil jako hřbitov.", type: 'text' },
-			{ x: 130, y: 250, text: "Socha sv. Barbory, původně byla umístěna u vstupu na městský hřbitov.", type: 'text' }
+		name: 'area.kostel_josta.name',
+		E: { img: `../assets/bgr/jost/jost_E.png`, pohled: 'area.kostel_josta.E.pohled', items: [
+			{ x: 650, y: 380, text: 'area.kostel_josta.E.item0', type: 'text' },
+			{ x: 130, y: 250, text: 'area.kostel_josta.E.item1', type: 'text' }
 		] },
-		S: { img: `../assets/bgr/jost/jost_S.png`, pohled: "okolo kostela", forward: "vedle_kostela", },
-		N: { img: `../assets/bgr/jost/jost_N.png`, pohled: "po schodišti na náměstí", forward: "zamek_namesti", items: [
-			{ x: 470, y: 360, text: "Statný kaštan, jistě toho mnoho pamatuje.", type: 'text' }
+		S: { img: `../assets/bgr/jost/jost_S.png`, pohled: 'area.kostel_josta.S.pohled', forward: "vedle_kostela", },
+		N: { img: `../assets/bgr/jost/jost_N.png`, pohled: 'area.kostel_josta.N.pohled', forward: "zamek_namesti", items: [
+			{ x: 470, y: 360, text: 'area.kostel_josta.N.item0', type: 'text' }
 		] },
-		W: { img: `../assets/bgr/jost/jost_W.png`, pohled: "na místecké naměstí", forward: "mistecke_namesti", items: [
-			{ x: 200, y: 570, text: "Chodník vede do Místku", type: 'text' }
+		W: { img: `../assets/bgr/jost/jost_W.png`, pohled: 'area.kostel_josta.W.pohled', forward: "mistecke_namesti", items: [
+			{ x: 200, y: 570, text: 'area.kostel_josta.W.item0', type: 'text' }
 		] },
 	},
 	vedle_kostela: {
-		name: "Vedle kostela sv. Jošta",
+		name: 'area.vedle_kostela.name',
 		E: {
-			img: `../assets/bgr/jost_hrob/jost_hrob_E.png`, pohled: "stará škola", items: [],
+			img: `../assets/bgr/jost_hrob/jost_hrob_E.png`, pohled: 'area.vedle_kostela.E.pohled', items: [],
 		},
-		S: { img: `../assets/bgr/jost_hrob/jost_hrob_S.png`, pohled: "socha sv. Floriána", items: [
-			{ x: 600, y: 300, text: "Socha patrona hasičů, sv. Floriána", type: 'text' }
+		S: { img: `../assets/bgr/jost_hrob/jost_hrob_S.png`, pohled: 'area.vedle_kostela.S.pohled', items: [
+			{ x: 600, y: 300, text: 'area.vedle_kostela.S.item0', type: 'text' }
 		] },
-		N: { img: `../assets/bgr/jost_hrob/jost_hrob_N.png`, pohled: "náhrobní kámen", items: [
-			{ x: 250, y: 400, text: "Na náhrobním kameni je velký, kamenný kříž. <br>Nakreslím si ho.<br><br> <img src='assets/bgr/jost_hrob/nahrobek.png' class='inventory_img' onclick='event.stopPropagation(); showLightbox(\"assets/bgr/jost_hrob/nahrobek.png\")'> " + ikona_stopa + " Získali jste stopu <span class='color-lighter-red'>kříž.</span>", itemKey: 'kriz_z_hrobu', type: 'item' }
+		N: { img: `../assets/bgr/jost_hrob/jost_hrob_N.png`, pohled: 'area.vedle_kostela.N.pohled', items: [
+			{ x: 250, y: 400, text: 'area.vedle_kostela.N.item0', itemKey: 'kriz_z_hrobu', type: 'item' }
 		] },
-		W: { img: `../assets/bgr/jost_hrob/jost_hrob_W.png`, pohled: "zpět ke vchodu do kostela", forward: "kostel_josta", items: [] },
+		W: { img: `../assets/bgr/jost_hrob/jost_hrob_W.png`, pohled: 'area.vedle_kostela.W.pohled', forward: "kostel_josta", items: [] },
 	},
 	u_muzea: {
-		name: "U muzea",
-		E: { img: `../assets/bgr/muzeum/muzeum_E.png`, pohled: "do města", items: [] },
+		name: 'area.u_muzea.name',
+		E: { img: `../assets/bgr/muzeum/muzeum_E.png`, pohled: 'area.frydecky_zamek.N.pohled', items: [] },
 		N: {
-			img: `../assets/bgr/muzeum/muzeum_N.png`, pohled: "dveře do muzea", items: [
-				{ x: 450, y: 350, text: "Muzeum je otevřeno.", type: 'npc' }
+			img: `../assets/bgr/muzeum/muzeum_N.png`, pohled: 'area.u_muzea.N.pohled', items: [
+				{ x: 450, y: 350, text: 'area.u_muzea.N.item0', type: 'npc' }
 			]
 		},
-		S: { img: `../assets/bgr/muzeum/muzeum_S_kniha.png`, pohled: "cihlové kruhy", items: [
-			{ x: 365, y: 420, text: "Stará kniha o Štandlu", type: 'item', itemKey: "kniha" },
+		S: { img: `../assets/bgr/muzeum/muzeum_S_kniha.png`, pohled: 'area.u_muzea.S.pohled', items: [
+			{ x: 365, y: 420, text: 'area.u_muzea.S.item0', type: 'item', itemKey: "kniha" },
 		] },
-		W: { img: `../assets/bgr/muzeum/muzeum_W.png`, pohled: "k frýdeckému zámku", forward: "frydecky_zamek", items: [] },
+		W: { img: `../assets/bgr/muzeum/muzeum_W.png`, pohled: 'area.u_muzea.W.pohled', forward: "frydecky_zamek", items: [] },
 	},
 };
 
@@ -480,7 +480,7 @@ function removeItem(itemId) {
 function updateInventoryDisplay() {
 	inventoryDisplay.innerHTML = '';
 	if (inventory.length === 0) {
-		inventoryDisplay.innerHTML = '<p style="text-align: center; color: #5a4d3f; font-size: 0.9em;">Inventář je prázdný.</p>';
+		inventoryDisplay.innerHTML = '<p style="text-align: center; color: #5a4d3f; font-size: 0.9em;">' + t('ui.inventory_empty') + '</p>';
 		return;
 	}
 
@@ -489,13 +489,13 @@ function updateInventoryDisplay() {
 		if (item) {
 			const itemDiv = document.createElement('div');
 			itemDiv.className = 'inventory-item';
-			itemDiv.title = item.tooltip;
+			itemDiv.title = t(item.tooltip);
 			itemDiv.onclick = () => handleInventoryClick(itemId);
 			const icon = document.createElement('i');
 			icon.className = `fas ${item.icon} inventory-icon`;
 
 			const name = document.createElement('span');
-			name.textContent = item.name
+			name.textContent = t(item.name)
 
 			itemDiv.appendChild(icon);
 			itemDiv.appendChild(name);
@@ -513,8 +513,8 @@ function handleInventoryClick(itemId) {
 
 	if (!item) return;
 
-	const title = `<i class="fas ${item.icon}"></i> ${item.name}`;
-	let content = item.tooltip || "K tomuto předmětu není žádný popis.";
+	const title = `<i class="fas ${item.icon}"></i> ${t(item.name)}`;
+	let content = item.tooltip ? t(item.tooltip) : t('ui.no_description');
 
 	// --- OBECNÁ LOGIKA PRO OTEVÍRÁNÍ OBRÁZKŮ V LIGHTBOXU ---
 	if (item.type === 'image' && item.popupText) {
@@ -535,7 +535,7 @@ function handleInventoryClick(itemId) {
 			content += '</div>';
 
 		} else {
-			content += `<br><br>_Chyba: Nebyla nalezena URL obrázku v popupText pro ${item.name}._`;
+			content += `<br><br>${t('ui.image_url_error', { name: t(item.name) })}`;
 		}
 	}else if (item.type === 'denik') {
 		handleDenikClick();	
@@ -583,7 +583,7 @@ window.showLightbox = function (imagePath) {
 	} else {
 		// Pro případ, že lightbox HTML není přítomen
 		console.error("Lightbox elementy nebyly nalezeny!");
-		showPopup(`Došlo k chybě při zobrazování mapy. Cesta k souboru: ${imagePath}`);
+		showPopup(t('ui.lightbox_error', { path: imagePath }));
 	}
 }
 
@@ -597,6 +597,8 @@ window.showLightbox = function (imagePath) {
  * @param {object} item Data hotspotu.
  */
 function handleHotspotClick(item) {
+	const itemText = t(item.text);
+
 	switch (item.type) {
 		case 'item':
 			const added = addItem(item.itemKey);
@@ -608,9 +610,9 @@ function handleHotspotClick(item) {
 					MAP['frydecky_zamek']['N'].forward = 'u_muzea';
 				}
 
-				showPopup(`${item.text} <br><br><span class="add_item_text">Předmět přidán do inventáře.</span>`);
+				showPopup(`${itemText} <br><br><span class="add_item_text">${t('ui.item_added')}</span>`);
 			} else {
-				showPopup("Už jste toto místo prozkoumali. " + item.text.replace(/(\*+.*\*+)/g, ''));
+				showPopup(t('ui.already_explored') + itemText.replace(/(\*+.*\*+)/g, ''));
 			}
 			break;
 
@@ -624,7 +626,7 @@ function handleHotspotClick(item) {
 
 		case 'text':
 		default:
-			showPopup(item.text);
+			showPopup(itemText);
 			break;
 	}
 }
@@ -642,7 +644,7 @@ function handlePolasekInteraction(item) {
 
 		console.log("polasek 1")
 		
-		showPopup("Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. <br><br>A má stará lopatka! Našel jste jí pod Štandlem? Díky že jste mi to donesl. Před lety jsem tam ve vykopávkách našel tento starý klíč. Nikdy nešel vyčistit. Zdá se, že se vám může hodit.'<br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!");
+		showPopup(t('npc.both'));
 		
 		removeItem('lopatka');
 		removeItem('strep');
@@ -656,7 +658,7 @@ function handlePolasekInteraction(item) {
 
 		console.log("polasek 2")
 
-		showPopup("Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. Díky že jste to donesl. Doneste mi ještě něco zajímavého a dám vám něco na oplátku.'");
+		showPopup(t('npc.shards_first'));
 		
 		removeItem('strep');
 		solvedPuzzles.push('strep');
@@ -665,7 +667,7 @@ function handlePolasekInteraction(item) {
 
 		console.log("polasek 3")
 
-		showPopup("Archeolog: 'Aha! Má stará lopatka! Našel jste ji pod Štandlem? Díky, že jste ji donesl. Doneste mi ještě něco zajímavého a dám vám něco na oplátku.'");
+		showPopup(t('npc.shovel_first'));
 		
 		removeItem('lopatka');
 		solvedPuzzles.push('lopatka');
@@ -674,7 +676,7 @@ function handlePolasekInteraction(item) {
 
 		console.log("polasek 5")
 
-		showPopup("Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. Díky že jste to donesl. Tady máte na oplátku starý klíč, možná se vám bude hodit.' <br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!");
+		showPopup(t('npc.shards_after_shovel'));
 		
 		removeItem('strep');
 		addItem('cerny_klic');
@@ -685,7 +687,7 @@ function handlePolasekInteraction(item) {
 		
 		console.log("polasek 6")
 
-		showPopup("Archeolog: 'Aha! Má stará lopatka! Našel jste ji pod Štandlem? Díky, že jste ji donesl. Tady máte na oplátku starý klíč, možná se vám bude hodit.' <br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!");
+		showPopup(t('npc.shovel_after_shards'));
 		
 		removeItem('lopatka');
 		addItem('cerny_klic');
@@ -696,10 +698,10 @@ function handlePolasekInteraction(item) {
 
 		console.log("polasek 7")
 
-		showPopup("Archeolog: 'Máte, vše co potřebujete. Jsem rád, že jsem se klíče zbavil. Nosil mi smůlu. Odneste ho raději někde zpět ke Štandlu.'");
+		showPopup(t('npc.has_key'));
 
 	} else {
-		showPopup("Archeolog: 'Víte že, v lesích kolem Štandlu se ukrývá plno starých tajemství? Pokud najdete něco zajímavého, rád se na to podívám.'");
+		showPopup(t('npc.default'));
 	}
 
 }
@@ -711,18 +713,18 @@ function handlePuzzleInteraction(item) {
 	if (currentArea === 'kamenna_tvar' && inventory.includes('cerny_klic')) {
 		// Hádanka u Erbu
 
-		showPopup("Použil jsem černý klíč na otvor ve tvaru klíčové dírky. Zdá se, že to spustilo nějaký mechanismus uvnitř erbu.");
+		showPopup(t('puzzle.used_key'));
 
 		puzzleModalBackdrop.style.display = 'flex';
 
 	}else if(currentArea === 'kamenna_tvar' && !inventory.includes('cerny_klic') && solvedPuzzles.includes('kameny_erb_detail')) {
-		showPopup("cesta je volná.");
+		showPopup(t('puzzle.path_free'));
 	}
 	
 	else if (currentArea === 'kamenna_tvar' && !inventory.includes('cerny_klic')) {
-		showPopup("Velký balvan je na porostlý mechem. Po bližším prozkoumání je v blízkosti \" tváře \" vidět otvor ve tvaru klíčové dírky.");
+		showPopup(t('puzzle.boulder'));
 	} else {
-		showPopup(item.text);
+		showPopup(t(item.text));
 	}
 }
 
@@ -753,7 +755,7 @@ window.solvePuzzle = function () {
 		sym4 === correctSym4) {
 
 		hidePopup('puzzle-modal-backdrop');
-		showPopup('Mechanismus zaskřípe a s hlasitým duněním se balvan odsune. <br><br><span class="color-lighter-red">Objevil se tajný vstup do jeskyně!</span><br><br> Nyní se musím pouze odhodlat a jít vpřed.');
+		showPopup(t('puzzle.solved'));
 
 		solvedPuzzles.push('kameny_erb_detail');
 		removeItem('cerny_klic');
@@ -767,13 +769,13 @@ window.solvePuzzle = function () {
 
 		// Zrušení hádanky, už není potřeba
 		const puzzleHotspot = MAP['kamenna_tvar']['E'].items.find(i => i.type === 'puzzle');
-		if (puzzleHotspot) puzzleHotspot.text = "Vstup do jeskyně je nyní otevřen.";
+		if (puzzleHotspot) puzzleHotspot.text = 'puzzle.cave_open';
 
 		updateView();
 
 	} else {
 		
-		showPopup('Nic se nestalo. Nastavení disků není správné.');
+		showPopup(t('puzzle.wrong'));
 	}
 }
 
@@ -783,13 +785,13 @@ window.solvePuzzle = function () {
  */
 function handleKonec() {
 	if (currentArea === 'konec') {
-		showPopup("<span class='color-lighter-red'>Temnota pohltila okolí...</span><br><br>Kámen se zavalil zpět a pochodně zhasly. Nyní tě nejspíš čeká stejný osud jako Černou Barboru!");
+		showPopup(t('ending.popup'));
 
 		let endingText = document.getElementById('ending-text');
 
 		setTimeout(() => {
 
-			endingText.innerHTML = "Takhle končí tvůj příběh...<br><br>";
+			endingText.innerHTML = t('ending.text');
 
 			endingScreen.style.display = 'flex';
 			endingScreen.style.opacity = 1;
@@ -835,11 +837,34 @@ function renderHotspots() {
 			// Hotspoty se umisťují relativně k viewportu
 			hotspot.style.left = `${item.x / VIEWPORT_WIDTH * 100}%`;
 			hotspot.style.top = `${item.y / VIEWPORT_HEIGHT * 100}%`;
-			hotspot.title = "Prozkoumat";
+			hotspot.title = t('ui.explore');
 			// Nastavení volání handleHotspotClick
 			hotspot.onclick = () => handleHotspotClick(item, solvedPuzzles);
 			viewport.appendChild(hotspot);
 		});
+	}
+}
+
+/**
+ * Nastaví popisky (směr, oblast, pohled) a stav tlačítka Vpřed.
+ * Volá se z updateView() i při přepnutí jazyka.
+ */
+function updateLabels(areaData, viewData, currentDir) {
+	const pohled = viewData.pohled;
+
+	directionLabel.textContent = t('ui.direction', { dir: t('dir.' + currentDir) });
+	areaLabel.textContent = t('ui.area', { area: t(areaData.name) });
+	pohledLabel.textContent = `${t(pohled)}`;
+
+	// Aktualizace stavu tlačítka Vpřed
+	if (viewData.forward) {
+		forwardButton.disabled = false;
+		forwardButton.title = t('ui.forward_title', { area: t(MAP[viewData.forward].name) });
+		forwardButton.textContent = t('ui.forward');
+	} else {
+		forwardButton.disabled = true;
+		forwardButton.title = t('ui.no_forward');
+		forwardButton.textContent = t('ui.forward');
 	}
 }
 
@@ -849,7 +874,7 @@ function updateView() {
 	const viewData = areaData[currentDir];
 	const pohled = areaData[currentDir].pohled;
 
-	console.log(`Pohled: ${pohled}`);
+	console.log(`Pohled: ${t(pohled)}`);
 
 	// 1. Zobrazení indikátoru načítání
 	loadingOverlay.style.display = 'flex';
@@ -899,39 +924,8 @@ function updateView() {
 			loadingOverlay.style.display = 'none';
 		}, 250);
 
-		// 3. Aktualizace popisků
-
-		let cz_currentDir = '';
-
-		switch (currentDir) {
-			case 'N':
-				cz_currentDir = 'S';
-				break;
-			case 'E':
-				cz_currentDir = 'V';
-				break;
-			case 'S':
-				cz_currentDir = 'J';
-				break;
-			case 'W':
-				cz_currentDir = 'Z';
-				break;
-		}
-
-		directionLabel.textContent = `Směr: ${cz_currentDir}`;
-		areaLabel.textContent = `Oblast: ${areaData.name}`;
-		pohledLabel.textContent = `${pohled}`;
-
-		// 4. Aktualizace stavu tlačítka Vpřed
-		if (viewData.forward) {
-			forwardButton.disabled = false;
-			forwardButton.title = `Pokračovat směrem ${MAP[viewData.forward].name}`;
-			forwardButton.textContent = 'Vpřed';
-		} else {
-			forwardButton.disabled = true;
-			forwardButton.title = "Dál jít nechci.";
-			forwardButton.textContent = 'Vpřed';
-		}
+		// 3. + 4. Aktualizace popisků a stavu tlačítka Vpřed
+		updateLabels(areaData, viewData, currentDir);
 
 		// 5. Vykreslení Hotspotů a Inventáře
 		renderHotspots();
@@ -939,7 +933,7 @@ function updateView() {
 
 		//jeskyne - prvni prichod
 		if(currentArea === 'jeskyne' && currentDir === 'W' && !solvedPuzzles.includes('jeskyne_prichod')) {
-			showPopup("Proboha! To je snad Černá Barbora! <br> Četl jsem o jejím příběhu... ale myslel jsem, že je to pouze pověra!");
+			showPopup(t('cave.first_arrival'));
 			solvedPuzzles.push('jeskyne_prichod');
 		}
 
@@ -949,9 +943,9 @@ function updateView() {
 		// Přesměrování na placeholder v případě chyby načítání
 		viewport.style.backgroundImage = `url('https://placehold.co/800x600/600000/ffffff?text=Temnota+pohltila+obraz!')`;
 		loadingOverlay.style.display = 'none';
-		directionLabel.textContent = `Směr: ${currentDir}`;
-		pohledLabel.textContent = `${pohled}`;
-		areaLabel.textContent = `Oblast: ${areaData.name} (Temnota pohltila obraz!)`;
+		directionLabel.textContent = t('ui.direction', { dir: currentDir });
+		pohledLabel.textContent = `${t(pohled)}`;
+		areaLabel.textContent = t('ui.area_error', { area: t(areaData.name) });
 		forwardButton.disabled = true;
 		renderHotspots();
 	};
@@ -1008,7 +1002,7 @@ window.moveForward = function () {
 	//jeskyne - zakazani vystupu kdyz nemam denik
 	if(currentArea === 'jeskyne' && currentDir === 'E' && !inventory.includes('denik')) {
 		if(!inventory.includes('denik')) {
-			showPopup("Ještě se tady porozhlédnu.");
+			showPopup(t('cave.stay'));
 			return;
 		}
 	}
@@ -1035,8 +1029,11 @@ window.moveForward = function () {
 }
 
 // --- INICIALIZACE ---
-window.onload = function () {
-	
+window.onload = async function () {
+
+	// počkat na načtení překladů (lang.json)
+	await i18nReady;
+
 	updateView();
 
 	let ovladaci_prvky = document.getElementById('ovladaci_prvky');
@@ -1054,7 +1051,7 @@ window.onload = function () {
 		let saved_game = this.localStorage.getItem("saved_game");
 		let potvrzeni = true;
 		if(saved_game.length > 0) {
-			potvrzeni = this.confirm("Chcete hru spustit? Předchozí uložená hru bude smazána.");
+			potvrzeni = this.confirm(t('confirm.start'));
 		}
 
 		if(potvrzeni) {
@@ -1071,7 +1068,7 @@ window.onload = function () {
 				//uvodni popup
 				let hra_spustena = this.localStorage.getItem("hra_spustena");
 				if(hra_spustena == 1 && currentArea === 'zacatek_cesty' && !solvedPuzzles.includes('uvod_popup')) {
-					showPopup(" \" Měl bych začít průzkumem okolních lesů. Možná tu někde v okolí Štandlu čeká stopa, která mi konečně něco objasní. \" ");
+					showPopup(t('start.intro_popup'));
 					solvedPuzzles.push('uvod_popup');
 				}
 
@@ -1092,7 +1089,7 @@ window.onload = function () {
 	};
 
 	load_btn.onclick = () => {
-		let potvrzeni_nacteni = this.confirm("Chcete načíst uloženou hru?");
+		let potvrzeni_nacteni = this.confirm(t('confirm.load'));
 		if(potvrzeni_nacteni) {
 			nacistHru();
 		}
@@ -1101,7 +1098,7 @@ window.onload = function () {
 	/* SAVE GAME */
 	save_btn.onclick = () => {
 
-		let potvrzeni_ulozeni = this.confirm("Chcete uložit hru?");
+		let potvrzeni_ulozeni = this.confirm(t('confirm.save'));
 
 		if(potvrzeni_ulozeni) {
 
@@ -1116,7 +1113,7 @@ window.onload = function () {
 			this.localStorage.setItem("saved_game", JSON.stringify(saved_game));
 
 			if(this.localStorage.getItem("saved_game").length > 0) {
-				alert("Hra byla uložena.");
+				alert(t('alert.saved'));
 			}
 		}
 	};
@@ -1133,10 +1130,10 @@ window.onload = function () {
 	credits.onclick = () => {
 
 		let popupText = 
-			"Vytvořil: <span class='color-lighter-red'>Jan Gerek</span><br>" +
-			"Fotografie lokací: <span class='color-lighter-red'>Jan Gerek</span><br><br>" +
-			"Texty: <span class='color-lighter-red'>Hrady.cz, Jan Gerek</span><br><br>" +
-			"Pomáhali: <br><br>"+
+			t('credits.created') + " <span class='color-lighter-red'>Jan Gerek</span><br>" +
+			t('credits.photos') + " <span class='color-lighter-red'>Jan Gerek</span><br><br>" +
+			t('credits.texts') + " <span class='color-lighter-red'>Hrady.cz, Jan Gerek</span><br><br>" +
+			t('credits.helped') + " <br><br>"+
 				"<ul class='credits-ul'>" +
 					"<li><i class='fas fa-photo-film'></i> <a href='https://www.photos.google.com' target='_blank'>Google Photos</a>, <a href='https://www.photopea.com/' target='_blank'>Photopea</a></li>" +
 					"<li><i class='fas fa-robot'></i> <a href='https://gemini.google.com/' target='_blank'>Google Gemini, ChatGPT</li>" +
@@ -1182,7 +1179,7 @@ function nacistHru(){
 	let saved_game_json = this.localStorage.getItem("saved_game");
 
 	if(saved_game_json.length == 0) {
-		alert("Žádná uložená hra k načtení.");
+		alert(t('alert.no_save'));
 		return;
 	}else{
 
@@ -1210,7 +1207,7 @@ window.addEventListener('beforeunload', function (e) {
 
 	let hra_spustena = this.localStorage.getItem("hra_spustena");
 	if (hra_spustena == "1") {
-		return 'Jste si jisti, že chcete opustit stránku?';
+		return t('ui.leave_page');
 	}
 
 });
@@ -1258,39 +1255,52 @@ function rotateWheel(event) {
 
 const denik_zapisy = {
 	1: {
-		"den": "8. února 1728",
-		"text": "Dnes jsem vstala před úsvitem a ve studených zdech kláštera se modlila za klid, který stále nepřichází. Při práci v kuchyni jsem opět cítila, že mé srdce patří jinam, a i když se snažím být poslušná, mé myšlenky utíkají ven z kláštera k životu, který jsem si nikdy nedovolila žít."
+		"den": "denik.1.den",
+		"text": "denik.1.text"
 	},
 	2: {
-		"den": "9. února",
-		"text": "Matka představená dnes hovořila o ctnostech, ale každé její slovo mi připadalo jako další kámen na mé hrudi. V zahradě jsem se snažila najít pokoj, avšak přepadaly mě myšlenky na rytíře Harasovského a na to, zda jsem vůbec kdy byla určena k řeholnímu životu."
+		"den": "denik.2.den",
+		"text": "denik.2.text"
 	},
 	3: {
-		"den": "10. února",
-		"text": "Dnes v noci mě probudil sen, v němž na mě někdo stále volal, a já pochopila, že již déle nemohu popírat volání svého srdce. S modlitbou na rtech, ale s neklidem v duši, jsem se rozhodla. Zítra opustím klášter! A budu hledat vlastní cestu mimo jeho zdi."
+		"den": "denik.3.den",
+		"text": "denik.3.text"
 	},
 	4: {
-		"den": "11. února",
-		"text": "Utekla jsem z kláštera. Pod rouškou noci jsem došla až na Štandl, kde na mne měl čekat rytíř Harasovský. Teď sedím v tichu mezi chladnými kameny a čekám na něj. Proč stále nepřichází? Bojím se, že jsem udělala chybu."
+		"den": "denik.4.den",
+		"text": "denik.4.text"
 	},
 	5: {
-		"den": "12. února",
-		"text": "Dnešní ráno bylo mrazivé, probudil mne silný vítr a když jsem otevřela oči, spatřila jsem podivného muže, který vypadal jako by přišel z jiné doby. Stál nehybně nade mnou a hlubokým hlasem mi řekl, abych našla jakýsi balvan. Za ním prý najdu své štěstí. Symbolům a klíči jenž mi předal však nerozumím."
+		"den": "denik.5.den",
+		"text": "denik.5.text"
 	},
 	6: {
-		"den": "12. února - večer",
-		"text": "Už se stmívalo, ale ten balvan jsem našla. Na něm byla podivná rytina, která mi připomínala obličej onoho záhadného muže. Po chvíli jsem nalezla klíčovou dírku, do které vpadl klíč. Hlavolam, co se objevil ale stále nemohu rozluštit."
+		"den": "denik.6.den",
+		"text": "denik.6.text"
 	},
 	7: {
-		"den": "13.února",
-		"text": "Zkoušela jsem to celou noc, ale nakonec jsem to rozluštila! Vstoupila jsem do temné jeskyně. Uvnitř ležel hrob dávného krále obklopený poklady, jež se třpytily ve světle mé svíce. Vzala jsem si jen pár zlatých mincí. Když jsem se však obrátila k východu a vydala se zpět, čekalo mne strašné překvapení. Vchod se zavalil a já zůstala uvězněna."
+		"den": "denik.7.den",
+		"text": "denik.7.text"
 	},
 	8: {
-		"den": "14. února 1728",
-		"text": "Už nevím, kolik hodin jsem tu, v naprosté temnotě, kde slyším jen vlastní dech a kapání vody. Modlím se, aby mě někdo našel, nebo aby se skála slitovala a znovu se otevřela, ale má víra se třese stejně jako ruce, kterými píšu tento poslední záznam. Má poslední svíce dohořívá… a až zhasne, zůstane jen tma......."
+		"den": "denik.8.den",
+		"text": "denik.8.text"
 	}
 	
 };
+
+/**
+ * Vytvoří element jednoho záznamu (deník / kniha) v aktuálním jazyce.
+ */
+function createZapisElement(zapis) {
+	let zapis_element = document.createElement('div');
+	zapis_element.classList.add('zapis');
+	zapis_element.innerHTML = `
+		<div class="den">${t(zapis.den)}</div>
+		<div class="text">${t(zapis.text)}</div>
+	`;
+	return zapis_element;
+}
 
 function handleDenikClick(){
 
@@ -1303,12 +1313,7 @@ function handleDenikClick(){
 
 		Object.values(denik_zapisy).forEach((zapis) => {
 
-			let zapis_element = document.createElement('div');
-			zapis_element.classList.add('zapis');
-			zapis_element.innerHTML = `
-				<div class="den">${zapis.den}</div>
-				<div class="text">${zapis.text}</div>
-			`;
+			let zapis_element = createZapisElement(zapis);
 			denik_zapisy_div.appendChild(zapis_element);
 			precteneKnihy.push('denik');
 
@@ -1321,20 +1326,20 @@ function handleDenikClick(){
 const kniha_zapisy = {
 
 	1: {
-		"den": "O štandlu",
-		"text": "Tajemný zalesněný vrch Štandl (lidově Štandel) se nachází 1,7km vzdušnou čarou západně od centra města Místek. Vrch je vysoký 350 m. n. m.<br>Na vrchol vedou dnes dvě hlavní cesty. Ta snadnější začíná na západním svahu kopce, druhá vede směrem od Místku z východu. Vrchol kopce a vlastně i hradní jádro obklopoval ze všech stran kruhový či oválný hluboký příkop s vyvýšeným valem. Dodnes je uprostřed jádra zakrytý vchod do podzemní chodby."
+		"den": "kniha.1.den",
+		"text": "kniha.1.text"
 	},
 	2: {
-		"den": "Zlatý poklad",
-		"text": "Kdysi dávno Štandl nestál, když zemřel slavný hunský kmenový náčelník Attila, položili jej ve zlaté rakvi spolu s mnoha poklady na tomto místě do země a vojáci po několik týdnů nosili hlínu a kameny, ze které nasypali mohylu, dnešní Štandl. Naposledy se pokoušel najít tento poklad jeden starousedlík ze Sviadnova."
+		"den": "kniha.2.den",
+		"text": "kniha.2.text"
 	},
 	3: {
-		"den": "Černá paní Barbora",
-		"text": "Na jihovýchodním svahu Štandlu stávala velká skála, dnes z ní zbyl menší kousek. Kdysi byl na skále k přečtení nápis \"Černá paní Barbora\". Pod skálou má být zasypaná jeskyně, ve které se ukrývala uprchlá mladá jeptiška, černých vlasů a modrých očí. Hukvaldský hradní hejtman rytíř Harasovský ji svedl a zde se milenci scházeli. Jeptiška hořce litovala porušení řeholního slibu a když pro ni hejtman jel, aby si ji odvedl na hrad, strhla se strašná bouře a za rachocení skal jeskyně zmizela. Ještě dlouho slyšeli jeptišku naříkat v podzemí. V dnešní době je možné v určitém místě najít velký balvan s podivnou rytinou, která připomíná obličej a zvláštní klíčovou dírkou, ke které nikdo nemá klíč..."
+		"den": "kniha.3.den",
+		"text": "kniha.3.text"
 	},
 	4: {
-		"den": "Propadlý hrad",
-		"text": "Ještě kolem roku 1850 byly na Štandlu ke spatření skrovné zbytky zdí zaniklého hrádku, nazývaného údajně Friedeke nebo Na zámčisku. V nepřístupném podzemí má být ukryt poklad a velká jáma na vrcholu je prý zbytkem po propadlém hradu a jeho sklepeních. Archeologickým výzkumem zde byla potvrzena podzemní chodba."
+		"den": "kniha.4.den",
+		"text": "kniha.4.text"
 	}
 
 }
@@ -1350,12 +1355,7 @@ function handleKnihaClick(){
 
 		Object.values(kniha_zapisy).forEach((zapis) => {
 
-			let zapis_element = document.createElement('div');
-			zapis_element.classList.add('zapis');
-			zapis_element.innerHTML = `
-				<div class="den">${zapis.den}</div>
-				<div class="text">${zapis.text}</div>
-			`;
+			let zapis_element = createZapisElement(zapis);
 			
 			kniha_zapisy_div.appendChild(zapis_element);
 			precteneKnihy.push('kniha');
@@ -1368,4 +1368,37 @@ function handleKnihaClick(){
 
 	
 
+}
+
+
+// --- PŘEPNUTÍ JAZYKA ---
+
+/**
+ * Volá se z i18n.js po změně jazyka. Překreslí všechno, co se skládá v JS.
+ */
+function onLanguageChanged() {
+	const currentDir = DIRECTIONS[currentDirectionIndex];
+	const areaData = MAP[currentArea];
+	const viewData = areaData[currentDir];
+
+	updateLabels(areaData, viewData, currentDir);
+	renderHotspots();
+	updateInventoryDisplay();
+
+	// deník a kniha - pokud už jsou vykreslené, vykreslit znovu v novém jazyce
+	if (precteneKnihy.includes('denik')) {
+		const div = document.getElementById('denik_zapisy');
+		div.innerHTML = '';
+		Object.values(denik_zapisy).forEach(zapis => div.appendChild(createZapisElement(zapis)));
+	}
+	if (precteneKnihy.includes('kniha')) {
+		const div = document.getElementById('kniha_zapisy');
+		div.innerHTML = '';
+		Object.values(kniha_zapisy).forEach(zapis => div.appendChild(createZapisElement(zapis)));
+	}
+
+	// koncová obrazovka
+	if (endingScreen.style.display === 'flex') {
+		document.getElementById('ending-text').innerHTML = t('ending.text');
+	}
 }

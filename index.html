@@ -3,12 +3,12 @@
 
 <head>
 
-	<title>Záhada Vytesané Tváře … aneb Prokletí Černé Barbory</title>
+	<title data-i18n="meta.title">Záhada Vytesané Tváře … aneb Prokletí Černé Barbory</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Krátká point-and-click adventura zasazená do tajemného lesa pod Štandlem. Prozkoumávejte prostředí, sbírejte stopy a řešte hádanky, abyste odhalili záhadu vytesané tváře na kameni.">
+    <meta name="description" content="Krátká point-and-click adventura zasazená do tajemného lesa pod Štandlem. Prozkoumávejte prostředí, sbírejte stopy a řešte hádanky, abyste odhalili záhadu vytesané tváře na kameni." data-i18n-attr="content:meta.description">
     <meta name="keywords" content="point-and-click, adventura, hra, záhada, vytesaná tvář, Štandl, les, hádanky, česká hra">
     <meta name="author" content="Jan Gerek">
 
@@ -48,6 +48,9 @@
 		@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Ephesis:wght@400;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+		/* přepínač jazyka */
+		.lang-switch a.active { font-weight: bold; text-decoration: underline; }
 	</style>
 
 </head>
@@ -56,8 +59,8 @@
 
 	<div class="game-container">
 		<div class="logo">
-			<h1>Záhada Vytesané Tváře</h1>
-			<h2 class="aneb">... aneb prokletí Černé Barbory</h2>
+			<h1 data-i18n="game.title">Záhada Vytesané Tváře</h1>
+			<h2 class="aneb" data-i18n="game.subtitle">... aneb prokletí Černé Barbory</h2>
 		</div>
 		
 		<div id="viewport">
@@ -66,17 +69,17 @@
 			<div class="pohled-label" id="pohled-label"></div>
 			<div class="area-label" id="area-label"></div>
 			<div class="save-game" id="save-game">
-				<button id="ulozit_hru" class="control-button" title="Uložit hru"><i class="fas fa-save"></i></button> 
-				<button id="nacist_hru" class="control-button" title="Načíst hru"><i class="fas fa-compact-disc"></i></button>
+				<button id="ulozit_hru" class="control-button" title="Uložit hru" data-i18n-attr="title:ui.save_game"><i class="fas fa-save"></i></button> 
+				<button id="nacist_hru" class="control-button" title="Načíst hru" data-i18n-attr="title:ui.load_game"><i class="fas fa-compact-disc"></i></button>
 			</div>
 
 			<div id="fadeOverlay" class="fade-overlay"></div>
 			<div class="start-screen" id="start-screen">
 
 				<div class="start-screen-text">
-					<h2>Úvod</h2>
+					<h2 data-i18n="start.heading">Úvod</h2>
 
-					<p>
+					<p data-i18n-html="start.intro">
 						Jednoho dne ses vydal na Štandl. Vrchol tě přivítal neobvyklým tichem, takovým, které člověka spíše znepokojí než uklidní. Cestou zpět ses rozhodl sejít po úzké, téměř zapomenuté stezce. <br><br>
 
 						Tehdy jsi poprvé spatřil osamělý balvan uprostřed lesa. Jeho povrch byl zarostlý mechem, přesto na něm cosi vystupovalo. Tvář… nebo snad podivně zdeformovaný erb? Nedokázal jsi určit, co přesně vidíš, ale jeho vytesaný výraz se ti vpálil do paměti. <br><br>
@@ -91,8 +94,8 @@
 				</div>
 
 				<div class="start-screen-buttons">
-					<button id="spustit_hru" class="control-button new-game"><i class="fas fa-masks-theater"></i> Spustit novou hru</button>
-					<button id="nacist_hru_start" class="control-button load-game"><i class="fas fa-compact-disc"></i> Načíst hru</button>
+					<button id="spustit_hru" class="control-button new-game"><i class="fas fa-masks-theater"></i> <span data-i18n="start.new_game">Spustit novou hru</span></button>
+					<button id="nacist_hru_start" class="control-button load-game"><i class="fas fa-compact-disc"></i> <span data-i18n="start.load_game">Načíst hru</span></button>
 				</div>
 				
 
@@ -102,63 +105,63 @@
 			<!-- ending screen  -->
 			<div class="ending-screen" id="ending-screen">
 				<div class="ending-screen-text" id="ending-screen-text">
-					<h2>Konec hry</h2>
+					<h2 data-i18n="ending.heading">Konec hry</h2>
 					<p id="ending-text" class="ending-text">
 						
 					</p>
-					<button id="restart-game" class="control-button"><i class="fas fa-rotate"></i> Restartovat hru</button>
+					<button id="restart-game" class="control-button"><i class="fas fa-rotate"></i> <span data-i18n="ending.restart">Restartovat hru</span></button>
 				</div>
 			</div>
 			
 			<!-- denik -->
 			<div id="denik" class="denik">
-				<span class="denik-nadpis">...předchozí záznamy jsou nečitelné...</span>
+				<span class="denik-nadpis" data-i18n="denik.heading">...předchozí záznamy jsou nečitelné...</span>
 				<div id="denik_zapisy"></div>
-				<button id="zavrit_denik" class="control-button zavrit-denik">Zavřít deník</button>
+				<button id="zavrit_denik" class="control-button zavrit-denik" data-i18n="denik.close">Zavřít deník</button>
 				<div style="height: 20px; clear: both;"></div>
 			</div>
 
 			<!-- kniha -->
 			<div id="kniha" class="denik">
 				<div id="kniha_zapisy"></div>
-				<button id="zavrit_knihu" class="control-button zavrit-denik">Zavřít knihu</button>
+				<button id="zavrit_knihu" class="control-button zavrit-denik" data-i18n="kniha.close">Zavřít knihu</button>
 			</div>
 
 			<!-- napoveda -->
 			<div id="napoveda" class="denik">
-				<h2>Nápověda</h2>
+				<h2 data-i18n-html="help.heading">Nápověda</h2>
 
-				<h3>Rozložení obrazovky</h3>
-				<p>Každá obrazovka (lokace) se skládá z několika klíčových prvků:</p>
+				<h3 data-i18n-html="help.layout_heading">Rozložení obrazovky</h3>
+				<p data-i18n-html="help.layout_intro">Každá obrazovka (lokace) se skládá z několika klíčových prvků:</p>
 					<ul>
-						<li>Vlevo nahoře: místo, kde se právě nacházíte</li>
-						<li>Vpravo nahoře: směr pohledu / pohybu vpřed</li>
-						<li>Vpravo dole: popis kontrétního směru - co lze vidět</li>
+						<li data-i18n-html="help.layout_1">Vlevo nahoře: místo, kde se právě nacházíte</li>
+						<li data-i18n-html="help.layout_2">Vpravo nahoře: směr pohledu / pohybu vpřed</li>
+						<li data-i18n-html="help.layout_3">Vpravo dole: popis kontrétního směru - co lze vidět</li>
 					</ul>
 
-				<h3>Pohyb</h3>
+				<h3 data-i18n-html="help.move_heading">Pohyb</h3>
 				<ul>
-					<li>Pohyb vlevo, vpravo: otáčení se na místě v dané oblasti</li>
-					<li>Pohyb vpřed - přesun do další oblasti</li>
+					<li data-i18n-html="help.move_1">Pohyb vlevo, vpravo: otáčení se na místě v dané oblasti</li>
+					<li data-i18n-html="help.move_2">Pohyb vpřed - přesun do další oblasti</li>
 				</ul>
 
-				<h3>Interakce</h3>
-				<p>
+				<h3 data-i18n-html="help.interact_heading">Interakce</h3>
+				<p data-i18n-html="help.interact_text">
 					Najetím myši na hlavní obrazovku můžete odhalit aktivní místa. Ty jsou viditelné jako malé bílé kolečka. <br>
 					Prozkoumávejte místa, shromažďujte stopy, postoupíte tak v příběhu. Věnujte pozornost detailům v popisech, protože vás navedou na správnou cestu.
 				</p>
 
-				<h3>Inventář</h3>
-				<p>Některá aktivní místa mohou vést k přidání předmětu do inventáře. V inventáři je poté možné předmět prozkoumat podrobněji kliknutím na daný předmět.</p>
+				<h3 data-i18n-html="help.inventory_heading">Inventář</h3>
+				<p data-i18n-html="help.inventory_text">Některá aktivní místa mohou vést k přidání předmětu do inventáře. V inventáři je poté možné předmět prozkoumat podrobněji kliknutím na daný předmět.</p>
 
-				<h3>Uložení / načtení hry</h3>
-				<p>V levém dolním rohu herního okna se po najetí myši zobrazí tlačítka pro uložení a načtení hry.<br>
+				<h3 data-i18n-html="help.save_heading">Uložení / načtení hry</h3>
+				<p data-i18n-html="help.save_text">V levém dolním rohu herního okna se po najetí myši zobrazí tlačítka pro uložení a načtení hry.<br>
 					Po kliknutí na tlačítko "uložit hru" se postup hrou uloží do paměti prohlížeče. Opětovné uložení hry přepíše předchozí pozici.<br>
 					Načtení hry načte uloženou hru, pokud uložená hra existuje.
 					Spuštění nové hry vymaže uloženou hru.
 				</p>
 				
-				<button id="zavrit_napoveda" class="control-button zavrit-denik">Zavřít</button>
+				<button id="zavrit_napoveda" class="control-button zavrit-denik" data-i18n="help.close">Zavřít</button>
 			</div>
 
 		</div>
@@ -168,16 +171,16 @@
 
 			<div class="controls-row">
 				<button class="control-button" id="turn-left" onclick="turnLeft()">
-					<i class="fas fa-circle-left"></i> Otočit se vlevo
+					<i class="fas fa-circle-left"></i> <span data-i18n="ui.turn_left">Otočit se vlevo</span>
 				</button>
 				<button class="control-button" id="move-forward" onclick="moveForward()">
-					<i class="fas fa-circle-up"></i><br> Vpřed
+					<i class="fas fa-circle-up"></i><br> <span data-i18n="ui.forward">Vpřed</span>
 				</button>
 				<button class="control-button" id="turn-right" onclick="turnRight()">
-					Otočit se vpravo <i class="fas fa-circle-right"></i>
+					<span data-i18n="ui.turn_right">Otočit se vpravo</span> <i class="fas fa-circle-right"></i>
 				</button>
 			</div>
-			<p class="instruction-text">Inventář:</p>
+			<p class="instruction-text" data-i18n="ui.inventory">Inventář:</p>
 
 			<div id="inventory-display">
 				
@@ -189,11 +192,15 @@
 			<div>
 				<span>© 2025 <a href="https://www.linkedin.com/in/jangerek/" target="_blank">Jan Gerek</a></span>
 			</div>
-			<div>
-				<a href="#" id="napoveda_link"><i class="fas fa-question-circle"></i> Nápověda</a>
+			<div class="lang-switch">
+				<i class="fas fa-language"></i>
+				<a href="#" data-lang="cz" title="Čeština">CZ</a> | <a href="#" data-lang="en" title="English">EN</a>
 			</div>
 			<div>
-				<a href="#" id="credits_link"><i class="fas fa-users"></i> Credits</a>
+				<a href="#" id="napoveda_link"><i class="fas fa-question-circle"></i> <span data-i18n="footer.help">Nápověda</span></a>
+			</div>
+			<div>
+				<a href="#" id="credits_link"><i class="fas fa-users"></i> <span data-i18n="footer.credits">Credits</span></a>
 			</div>
 		</div>
 
@@ -207,8 +214,8 @@
 		</div>
 
 		<div>
-			<h2>Mobilní zobrazení nepodporováno</h2>
-			<p>Z principu ovládání této hry je vhodné použít desktopovou verzi a myš.</p>
+			<h2 data-i18n="mobile.heading">Mobilní zobrazení nepodporováno</h2>
+			<p data-i18n="mobile.text">Z principu ovládání této hry je vhodné použít desktopovou verzi a myš.</p>
 		</div>
 		
 	</div>
@@ -217,15 +224,15 @@
 	<div class="modal-backdrop" id="text-modal-backdrop">
 		<div id="item-popup" class="popup-window">
 			<p id="popup-text"></p>
-			<button class="control-button" id="close-popup" onclick="hidePopup('text-modal-backdrop')">Zavřít</button>
+			<button class="control-button" id="close-popup" onclick="hidePopup('text-modal-backdrop')" data-i18n="popup.close">Zavřít</button>
 		</div>
 	</div>
 
 	<div class="modal-backdrop" id="puzzle-modal-backdrop">
 		<div id="input-puzzle-modal" class="popup-window">
 
-			<h2>Kamenný mechanismus</h2>
-			<p>Po otočení klíčem se ve skále objevily čtyři kamené disky. Jsou na nich různé symboly. Jaká může být kombinace?</p>
+			<h2 data-i18n="puzzle.heading">Kamenný mechanismus</h2>
+			<p data-i18n="puzzle.intro">Po otočení klíčem se ve skále objevily čtyři kamené disky. Jsou na nich různé symboly. Jaká může být kombinace?</p>
 
 			<div class="puzzle-wheels-container">
 			
@@ -279,8 +286,8 @@
 			
 			</div>
 
-			<button id="solve-puzzle-button" class="control-button" onclick="solvePuzzle()"><i class="fas fa-key"></i> Odemknout</button>
-			<button class="control-button" id="close-popup" onclick="hidePopup('puzzle-modal-backdrop')">Zavřít</button>
+			<button id="solve-puzzle-button" class="control-button" onclick="solvePuzzle()"><i class="fas fa-key"></i> <span data-i18n="puzzle.unlock">Odemknout</span></button>
+			<button class="control-button" id="close-popup" onclick="hidePopup('puzzle-modal-backdrop')" data-i18n="popup.close">Zavřít</button>
 
 
 		</div>
@@ -289,11 +296,12 @@
 
 	<div id="lightbox-backdrop" class="modal-backdrop" style="display: none;">
 		<div class="modal-content-wide" onclick="hidePopup('lightbox-backdrop')">
-			<img id="lightbox-image" src="" alt="Mapa v plném rozlišení" style="max-width: 90vw; max-height: 90vh;">
+			<img id="lightbox-image" src="" alt="Mapa v plném rozlišení" data-i18n-attr="alt:lightbox.alt" style="max-width: 90vw; max-height: 90vh;">
 			<span class="close-button" style="top: 10px; right: 20px;">&times;</span>
 		</div>
 	</div>
 
+	<script src="i18n.js"></script>
 	<script src="game.js"></script>
 	
 </body>

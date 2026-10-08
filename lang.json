@@ -1,0 +1,1294 @@
+{
+ "meta.title": {
+  "cz": "Záhada Vytesané Tváře … aneb Prokletí Černé Barbory",
+  "en": "The Mystery of the Carved Face … or The Curse of Black Barbora"
+ },
+ "meta.description": {
+  "cz": "Krátká point-and-click adventura zasazená do tajemného lesa pod Štandlem. Prozkoumávejte prostředí, sbírejte stopy a řešte hádanky, abyste odhalili záhadu vytesané tváře na kameni.",
+  "en": "A short point-and-click adventure set in the mysterious forest below Štandl. Explore your surroundings, collect clues and solve puzzles to uncover the mystery of the face carved into the stone."
+ },
+ "game.title": {
+  "cz": "Záhada Vytesané Tváře",
+  "en": "The Mystery of the Carved Face"
+ },
+ "game.subtitle": {
+  "cz": "... aneb prokletí Černé Barbory",
+  "en": "... or the curse of Black Barbora"
+ },
+ "ui.save_game": {
+  "cz": "Uložit hru",
+  "en": "Save game"
+ },
+ "ui.load_game": {
+  "cz": "Načíst hru",
+  "en": "Load game"
+ },
+ "start.heading": {
+  "cz": "Úvod",
+  "en": "Introduction"
+ },
+ "start.intro": {
+  "cz": "Jednoho dne ses vydal na Štandl. Vrchol tě přivítal neobvyklým tichem, takovým, které člověka spíše znepokojí než uklidní. Cestou zpět ses rozhodl sejít po úzké, téměř zapomenuté stezce. <br><br> Tehdy jsi poprvé spatřil osamělý balvan uprostřed lesa. Jeho povrch byl zarostlý mechem, přesto na něm cosi vystupovalo. Tvář… nebo snad podivně zdeformovaný erb? Nedokázal jsi určit, co přesně vidíš, ale jeho vytesaný výraz se ti vpálil do paměti. <br><br> Od toho dne se ti neustále vracel na mysl. A dnes, po nocích plných neklidu a zvláštních snů, jsi se rozhodl vrátit a snad na něco přijít. <br><br> Vstupuješ do ponurého lesa pod Štandlem. Je chladný mlhavý podzimní den. <br><br> Tvé pátrání právě začíná…",
+  "en": "One day you set off for Štandl. The summit greeted you with an unusual silence, the kind that unsettles a person more than it calms them. On the way back you decided to take a narrow, almost forgotten path down. <br><br> That was when you first saw a lone boulder in the middle of the forest. Its surface was overgrown with moss, yet something stood out on it. A face… or perhaps a strangely deformed coat of arms? You couldn't tell exactly what you were seeing, but its carved expression burned itself into your memory. <br><br> Since that day it has kept coming back to your mind. And today, after nights full of restlessness and strange dreams, you have decided to return and perhaps figure something out. <br><br> You are entering the gloomy forest below Štandl. It is a cold, foggy autumn day. <br><br> Your investigation is only just beginning…"
+ },
+ "start.new_game": {
+  "cz": "Spustit novou hru",
+  "en": "Start a new game"
+ },
+ "start.load_game": {
+  "cz": "Načíst hru",
+  "en": "Load game"
+ },
+ "ending.heading": {
+  "cz": "Konec hry",
+  "en": "Game over"
+ },
+ "ending.restart": {
+  "cz": "Restartovat hru",
+  "en": "Restart game"
+ },
+ "denik.heading": {
+  "cz": "...předchozí záznamy jsou nečitelné...",
+  "en": "...the previous entries are illegible..."
+ },
+ "denik.close": {
+  "cz": "Zavřít deník",
+  "en": "Close diary"
+ },
+ "kniha.close": {
+  "cz": "Zavřít knihu",
+  "en": "Close book"
+ },
+ "help.heading": {
+  "cz": "Nápověda",
+  "en": "Help"
+ },
+ "help.layout_heading": {
+  "cz": "Rozložení obrazovky",
+  "en": "Screen layout"
+ },
+ "help.layout_intro": {
+  "cz": "Každá obrazovka (lokace) se skládá z několika klíčových prvků:",
+  "en": "Every screen (location) consists of several key elements:"
+ },
+ "help.layout_1": {
+  "cz": "Vlevo nahoře: místo, kde se právě nacházíte",
+  "en": "Top left: the place where you currently are"
+ },
+ "help.layout_2": {
+  "cz": "Vpravo nahoře: směr pohledu / pohybu vpřed",
+  "en": "Top right: the direction you are facing / moving forward"
+ },
+ "help.layout_3": {
+  "cz": "Vpravo dole: popis kontrétního směru - co lze vidět",
+  "en": "Bottom right: a description of the specific direction – what can be seen"
+ },
+ "help.move_heading": {
+  "cz": "Pohyb",
+  "en": "Movement"
+ },
+ "help.move_1": {
+  "cz": "Pohyb vlevo, vpravo: otáčení se na místě v dané oblasti",
+  "en": "Move left, right: turn on the spot within the given area"
+ },
+ "help.move_2": {
+  "cz": "Pohyb vpřed - přesun do další oblasti",
+  "en": "Move forward – go to the next area"
+ },
+ "help.interact_heading": {
+  "cz": "Interakce",
+  "en": "Interaction"
+ },
+ "help.interact_text": {
+  "cz": "Najetím myši na hlavní obrazovku můžete odhalit aktivní místa. Ty jsou viditelné jako malé bílé kolečka. <br> Prozkoumávejte místa, shromažďujte stopy, postoupíte tak v příběhu. Věnujte pozornost detailům v popisech, protože vás navedou na správnou cestu.",
+  "en": "By moving the mouse over the main screen you can reveal the active spots. They appear as small white circles. <br> Explore places and collect clues to advance the story. Pay attention to the details in the descriptions, as they will guide you the right way."
+ },
+ "help.inventory_heading": {
+  "cz": "Inventář",
+  "en": "Inventory"
+ },
+ "help.inventory_text": {
+  "cz": "Některá aktivní místa mohou vést k přidání předmětu do inventáře. V inventáři je poté možné předmět prozkoumat podrobněji kliknutím na daný předmět.",
+  "en": "Some active spots can lead to an item being added to your inventory. You can then examine an item in more detail by clicking on it in the inventory."
+ },
+ "help.save_heading": {
+  "cz": "Uložení / načtení hry",
+  "en": "Saving / loading the game"
+ },
+ "help.save_text": {
+  "cz": "V levém dolním rohu herního okna se po najetí myši zobrazí tlačítka pro uložení a načtení hry.<br> Po kliknutí na tlačítko \"uložit hru\" se postup hrou uloží do paměti prohlížeče. Opětovné uložení hry přepíše předchozí pozici.<br> Načtení hry načte uloženou hru, pokud uložená hra existuje. Spuštění nové hry vymaže uloženou hru.",
+  "en": "In the bottom left corner of the game window, buttons for saving and loading the game appear when you hover the mouse over it.<br> After clicking the \"save game\" button, your progress is stored in the browser's memory. Saving again overwrites the previous position.<br> Loading the game loads the saved game, if one exists. Starting a new game deletes the saved game."
+ },
+ "help.close": {
+  "cz": "Zavřít",
+  "en": "Close"
+ },
+ "ui.turn_left": {
+  "cz": "Otočit se vlevo",
+  "en": "Turn left"
+ },
+ "ui.turn_right": {
+  "cz": "Otočit se vpravo",
+  "en": "Turn right"
+ },
+ "ui.inventory": {
+  "cz": "Inventář:",
+  "en": "Inventory:"
+ },
+ "footer.help": {
+  "cz": "Nápověda",
+  "en": "Help"
+ },
+ "footer.credits": {
+  "cz": "Credits",
+  "en": "Credits"
+ },
+ "mobile.heading": {
+  "cz": "Mobilní zobrazení nepodporováno",
+  "en": "Mobile view is not supported"
+ },
+ "mobile.text": {
+  "cz": "Z principu ovládání této hry je vhodné použít desktopovou verzi a myš.",
+  "en": "Because of how this game is controlled, it is best to use the desktop version and a mouse."
+ },
+ "popup.close": {
+  "cz": "Zavřít",
+  "en": "Close"
+ },
+ "puzzle.heading": {
+  "cz": "Kamenný mechanismus",
+  "en": "Stone mechanism"
+ },
+ "puzzle.intro": {
+  "cz": "Po otočení klíčem se ve skále objevily čtyři kamené disky. Jsou na nich různé symboly. Jaká může být kombinace?",
+  "en": "After turning the key, four stone disks appeared in the rock. They bear various symbols. What could the combination be?"
+ },
+ "puzzle.unlock": {
+  "cz": "Odemknout",
+  "en": "Unlock"
+ },
+ "lightbox.alt": {
+  "cz": "Mapa v plném rozlišení",
+  "en": "Map in full resolution"
+ },
+ "npc.both": {
+  "cz": "Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. <br><br>A má stará lopatka! Našel jste jí pod Štandlem? Díky že jste mi to donesl. Před lety jsem tam ve vykopávkách našel tento starý klíč. Nikdy nešel vyčistit. Zdá se, že se vám může hodit.'<br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!",
+  "en": "Archaeologist: 'Hmmm... These are interesting shards, they look like they're from the 17th century. We have plenty of those here. <br><br>And my old shovel! Did you find it below Štandl? Thank you for bringing it to me. Years ago I found this old key in the excavations there. It could never be cleaned. It seems it might come in handy for you.'<br><br>You have obtained a <span class='color-lighter-red'>black key</span>!"
+ },
+ "npc.shards_first": {
+  "cz": "Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. Díky že jste to donesl. Doneste mi ještě něco zajímavého a dám vám něco na oplátku.'",
+  "en": "Archaeologist: 'Hmmm... These are interesting shards, they look like they're from the 17th century. We have plenty of those here. Thank you for bringing them. Bring me something else interesting and I'll give you something in return.'"
+ },
+ "npc.shovel_first": {
+  "cz": "Archeolog: 'Aha! Má stará lopatka! Našel jste ji pod Štandlem? Díky, že jste ji donesl. Doneste mi ještě něco zajímavého a dám vám něco na oplátku.'",
+  "en": "Archaeologist: 'Aha! My old shovel! Did you find it below Štandl? Thank you for bringing it. Bring me something else interesting and I'll give you something in return.'"
+ },
+ "npc.shards_after_shovel": {
+  "cz": "Archeolog: 'Hmmm...To jsou zajímavé střepy, vypadají jako ze 17. století. Podobných tu máme plno. Díky že jste to donesl. Tady máte na oplátku starý klíč, možná se vám bude hodit.' <br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!",
+  "en": "Archaeologist: 'Hmmm... These are interesting shards, they look like they're from the 17th century. We have plenty of those here. Thank you for bringing them. Here, take this old key in return, perhaps it will come in handy.' <br><br>You have obtained a <span class='color-lighter-red'>black key</span>!"
+ },
+ "npc.shovel_after_shards": {
+  "cz": "Archeolog: 'Aha! Má stará lopatka! Našel jste ji pod Štandlem? Díky, že jste ji donesl. Tady máte na oplátku starý klíč, možná se vám bude hodit.' <br><br>Získali jste <span class='color-lighter-red'>černý klíč</span>!",
+  "en": "Archaeologist: 'Aha! My old shovel! Did you find it below Štandl? Thank you for bringing it. Here, take this old key in return, perhaps it will come in handy.' <br><br>You have obtained a <span class='color-lighter-red'>black key</span>!"
+ },
+ "npc.has_key": {
+  "cz": "Archeolog: 'Máte, vše co potřebujete. Jsem rád, že jsem se klíče zbavil. Nosil mi smůlu. Odneste ho raději někde zpět ke Štandlu.'",
+  "en": "Archaeologist: 'You have everything you need. I'm glad to be rid of that key. It brought me bad luck. You'd better take it back somewhere near Štandl.'"
+ },
+ "npc.default": {
+  "cz": "Archeolog: 'Víte že, v lesích kolem Štandlu se ukrývá plno starých tajemství? Pokud najdete něco zajímavého, rád se na to podívám.'",
+  "en": "Archaeologist: 'Did you know that the forests around Štandl hide many old secrets? If you find anything interesting, I'd be glad to take a look.'"
+ },
+ "puzzle.used_key": {
+  "cz": "Použil jsem černý klíč na otvor ve tvaru klíčové dírky. Zdá se, že to spustilo nějaký mechanismus uvnitř erbu.",
+  "en": "I used the black key on the keyhole-shaped opening. It seems to have set off some mechanism inside the coat of arms."
+ },
+ "puzzle.path_free": {
+  "cz": "cesta je volná.",
+  "en": "The way is clear."
+ },
+ "puzzle.boulder": {
+  "cz": "Velký balvan je na porostlý mechem. Po bližším prozkoumání je v blízkosti \" tváře \" vidět otvor ve tvaru klíčové dírky.",
+  "en": "The large boulder is covered in moss. On closer inspection, a keyhole-shaped opening can be seen near the \" face \"."
+ },
+ "puzzle.solved": {
+  "cz": "Mechanismus zaskřípe a s hlasitým duněním se balvan odsune. <br><br><span class=\"color-lighter-red\">Objevil se tajný vstup do jeskyně!</span><br><br> Nyní se musím pouze odhodlat a jít vpřed.",
+  "en": "The mechanism creaks and, with a loud rumble, the boulder slides aside. <br><br><span class=\"color-lighter-red\">A secret entrance to the cave has appeared!</span><br><br> Now I just have to muster the courage to go forward."
+ },
+ "puzzle.wrong": {
+  "cz": "Nic se nestalo. Nastavení disků není správné.",
+  "en": "Nothing happened. The disks are not set correctly."
+ },
+ "ending.popup": {
+  "cz": "<span class='color-lighter-red'>Temnota pohltila okolí...</span><br><br>Kámen se zavalil zpět a pochodně zhasly. Nyní tě nejspíš čeká stejný osud jako Černou Barboru!",
+  "en": "<span class='color-lighter-red'>Darkness swallowed the surroundings...</span><br><br>The rock collapsed back into place and the torches went out. Now you will probably meet the same fate as Black Barbora!"
+ },
+ "puzzle.cave_open": {
+  "cz": "Vstup do jeskyně je nyní otevřen.",
+  "en": "The entrance to the cave is now open."
+ },
+ "ending.text": {
+  "cz": "Takhle končí tvůj příběh...<br><br>",
+  "en": "This is how your story ends...<br><br>"
+ },
+ "cave.first_arrival": {
+  "cz": "Proboha! To je snad Černá Barbora! <br> Četl jsem o jejím příběhu... ale myslel jsem, že je to pouze pověra!",
+  "en": "Good heavens! Is that Black Barbora? <br> I read about her story... but I thought it was only a legend!"
+ },
+ "cave.stay": {
+  "cz": "Ještě se tady porozhlédnu.",
+  "en": "I'll look around here a bit longer."
+ },
+ "start.intro_popup": {
+  "cz": " \" Měl bych začít průzkumem okolních lesů. Možná tu někde v okolí Štandlu čeká stopa, která mi konečně něco objasní. \" ",
+  "en": " \" I should start by exploring the surrounding woods. Perhaps somewhere around Štandl there is a clue waiting that will finally explain something to me. \" "
+ },
+ "confirm.start": {
+  "cz": "Chcete hru spustit? Předchozí uložená hru bude smazána.",
+  "en": "Do you want to start the game? The previously saved game will be deleted."
+ },
+ "confirm.load": {
+  "cz": "Chcete načíst uloženou hru?",
+  "en": "Do you want to load the saved game?"
+ },
+ "confirm.save": {
+  "cz": "Chcete uložit hru?",
+  "en": "Do you want to save the game?"
+ },
+ "alert.saved": {
+  "cz": "Hra byla uložena.",
+  "en": "Game saved."
+ },
+ "alert.no_save": {
+  "cz": "Žádná uložená hra k načtení.",
+  "en": "There is no saved game to load."
+ },
+ "ui.leave_page": {
+  "cz": "Jste si jisti, že chcete opustit stránku?",
+  "en": "Are you sure you want to leave the page?"
+ },
+ "credits.created": {
+  "cz": "Vytvořil:",
+  "en": "Created by:"
+ },
+ "credits.photos": {
+  "cz": "Fotografie lokací:",
+  "en": "Location photos:"
+ },
+ "credits.texts": {
+  "cz": "Texty:",
+  "en": "Texts:"
+ },
+ "credits.helped": {
+  "cz": "Pomáhali:",
+  "en": "With help from:"
+ },
+ "ui.inventory_empty": {
+  "cz": "Inventář je prázdný.",
+  "en": "The inventory is empty."
+ },
+ "ui.no_description": {
+  "cz": "K tomuto předmětu není žádný popis.",
+  "en": "There is no description for this item."
+ },
+ "ui.image_url_error": {
+  "cz": "_Chyba: Nebyla nalezena URL obrázku v popupText pro {name}._",
+  "en": "_Error: No image URL was found in popupText for {name}._"
+ },
+ "ui.lightbox_error": {
+  "cz": "Došlo k chybě při zobrazování mapy. Cesta k souboru: {path}",
+  "en": "An error occurred while displaying the map. File path: {path}"
+ },
+ "ui.item_added": {
+  "cz": "Předmět přidán do inventáře.",
+  "en": "Item added to inventory."
+ },
+ "ui.already_explored": {
+  "cz": "Už jste toto místo prozkoumali. ",
+  "en": "You have already explored this place. "
+ },
+ "ui.explore": {
+  "cz": "Prozkoumat",
+  "en": "Examine"
+ },
+ "ui.direction": {
+  "cz": "Směr: {dir}",
+  "en": "Direction: {dir}"
+ },
+ "ui.area": {
+  "cz": "Oblast: {area}",
+  "en": "Area: {area}"
+ },
+ "ui.area_error": {
+  "cz": "Oblast: {area} (Temnota pohltila obraz!)",
+  "en": "Area: {area} (Darkness swallowed the image!)"
+ },
+ "ui.forward": {
+  "cz": "Vpřed",
+  "en": "Forward"
+ },
+ "ui.forward_title": {
+  "cz": "Pokračovat směrem {area}",
+  "en": "Continue towards {area}"
+ },
+ "ui.no_forward": {
+  "cz": "Dál jít nechci.",
+  "en": "I don't want to go any further."
+ },
+ "dir.N": {
+  "cz": "S",
+  "en": "N"
+ },
+ "dir.E": {
+  "cz": "V",
+  "en": "E"
+ },
+ "dir.S": {
+  "cz": "J",
+  "en": "S"
+ },
+ "dir.W": {
+  "cz": "Z",
+  "en": "W"
+ },
+ "area.zacatek_cesty.name": {
+  "cz": "Začátek cesty",
+  "en": "Start of the trail"
+ },
+ "area.zacatek_cesty.N.pohled": {
+  "cz": "stromy",
+  "en": "trees"
+ },
+ "area.zacatek_cesty.N.item0": {
+  "cz": "Kříž tady stojí od pradávna.",
+  "en": "The cross has stood here since time immemorial."
+ },
+ "area.zacatek_cesty.E.pohled": {
+  "cz": "k lesní křižovatce",
+  "en": "towards the forest crossroads"
+ },
+ "area.zacatek_cesty.E.item0": {
+  "cz": "Stará a rozpadlá závora brání vjezdu do lesů.",
+  "en": "An old, crumbling barrier blocks vehicles from entering the woods."
+ },
+ "area.zacatek_cesty.W.pohled": {
+  "cz": "zpátky domů",
+  "en": "back home"
+ },
+ "area.zacatek_cesty.W.item0": {
+  "cz": "Zpátky se vrátím, až záhadu vyřeším.",
+  "en": "I'll go back once I've solved the mystery."
+ },
+ "area.zacatek_cesty.S.pohled": {
+  "cz": "turistický ukazatel",
+  "en": "hiking signpost"
+ },
+ "area.zacatek_cesty.S.item0": {
+  "cz": "Jdu správně.",
+  "en": "I'm going the right way."
+ },
+ "area.lesni_krizovatka.name": {
+  "cz": "Rozcestí u křížku",
+  "en": "Crossroads by the wayside cross"
+ },
+ "area.lesni_krizovatka.N.pohled": {
+  "cz": "severní stezka",
+  "en": "northern trail"
+ },
+ "area.lesni_krizovatka.N.item0": {
+  "cz": "Kamenná socha tiše pozoruje návštěvníky lesa.",
+  "en": "The stone statue quietly watches over the visitors to the forest."
+ },
+ "area.lesni_krizovatka.E.pohled": {
+  "cz": "hustý les",
+  "en": "dense forest"
+ },
+ "area.lesni_krizovatka.W.pohled": {
+  "cz": "k začátku cesty",
+  "en": "towards the start of the trail"
+ },
+ "area.lesni_krizovatka.S.pohled": {
+  "cz": "jižní stezka",
+  "en": "southern trail"
+ },
+ "area.lesni_krizovatka.S.item0": {
+  "cz": "Zrezivělé kolo, dávno opuštěné svým majitelem, zde chátrá v lese.",
+  "en": "A rusty bicycle, long abandoned by its owner, decays here in the forest."
+ },
+ "area.cesta_pole.name": {
+  "cz": "Cesta kolem pole",
+  "en": "Path by the field"
+ },
+ "area.cesta_pole.N.pohled": {
+  "cz": "dále kolem pole",
+  "en": "further along the field"
+ },
+ "area.cesta_pole.N.item0": {
+  "cz": "Starý traktor. Kdysi býval pýchou polí, teď je to jen těžký rezavý vrak.",
+  "en": "An old tractor. It was once the pride of the fields, now it's just a heavy, rusty wreck."
+ },
+ "area.cesta_pole.E.pohled": {
+  "cz": "les",
+  "en": "forest"
+ },
+ "area.cesta_pole.W.pohled": {
+  "cz": "pole",
+  "en": "field"
+ },
+ "area.cesta_pole.W.item0": {
+  "cz": "Starý a otrhaný strašák, nahání mi hrůzu.",
+  "en": "An old, tattered scarecrow. It gives me the creeps."
+ },
+ "area.cesta_pole.W.item1": {
+  "cz": "Rezavý kbelík, je prázdný.",
+  "en": "A rusty bucket, it's empty."
+ },
+ "area.cesta_pole.S.pohled": {
+  "cz": "k rozcestí",
+  "en": "back to the crossroads"
+ },
+ "area.stara_lipina.name": {
+  "cz": "Mýtina",
+  "en": "Clearing"
+ },
+ "area.stara_lipina.N.pohled": {
+  "cz": "lesní obora",
+  "en": "game reserve"
+ },
+ "area.stara_lipina.N.item0": {
+  "cz": "Stará myslivecká věž, nepatřičně trčí uprostřed obory…",
+  "en": "An old hunting tower, awkwardly sticking out in the middle of the game reserve…"
+ },
+ "area.stara_lipina.E.pohled": {
+  "cz": "k lesu",
+  "en": "towards the forest"
+ },
+ "area.stara_lipina.E.item0": {
+  "cz": "Zkorodovaná cedule na pahýlu stromu. <br>Možná je lepší nevědět, před čím varovala.",
+  "en": "A corroded sign on a tree stump. <br>Maybe it's better not to know what it warned against."
+ },
+ "area.stara_lipina.W.pohled": {
+  "cz": "odbočka k poli",
+  "en": "turn-off to the field"
+ },
+ "area.stara_lipina.W.item0": {
+  "cz": "Pomník připomíná temnou událost, jež zde v roce 1886 otiskla svůj chladný stín. Jako by bolest tehdejšího dne dodnes prostupovala okolním tichem.",
+  "en": "The memorial recalls a dark event that cast its cold shadow here in 1886. As if the pain of that day still permeated the surrounding silence."
+ },
+ "area.stara_lipina.S.pohled": {
+  "cz": "oblast bývalé lipiny",
+  "en": "the site of the former Lipina"
+ },
+ "area.stara_lipina.S.item0": {
+  "cz": "Na tomto místě se kdysi rozkládala ves Frýdberk. Po jejích obydlích i lidech zůstala jen prázdnota a pár terénních nerovností.",
+  "en": "The village of Frýdberk once stood on this spot. Of its dwellings and its people, only emptiness and a few bumps in the terrain remain."
+ },
+ "area.les_u_vykopavek.name": {
+  "cz": "Uprostřed lesa",
+  "en": "In the middle of the forest"
+ },
+ "area.les_u_vykopavek.N.pohled": {
+  "cz": "smrkový les",
+  "en": "spruce forest"
+ },
+ "area.les_u_vykopavek.N.item0": {
+  "cz": "Kolečka plná hlíny úplně obrostla ostružiním.",
+  "en": "Wheelbarrows full of soil have become completely overgrown with brambles."
+ },
+ "area.les_u_vykopavek.E.pohled": {
+  "cz": "závora přes cestu",
+  "en": "barrier across the path"
+ },
+ "area.les_u_vykopavek.E.item0": {
+  "cz": "Zrezivělá závora brání cestě dál. Za ní se rozprostírá bývalý vojenský prostor.",
+  "en": "A rusty barrier blocks the way. Beyond it lies a former military area."
+ },
+ "area.les_u_vykopavek.W.pohled": {
+  "cz": "cesta na mýtinu",
+  "en": "path to the clearing"
+ },
+ "area.les_u_vykopavek.S.pohled": {
+  "cz": "staré vykopávky",
+  "en": "old excavations"
+ },
+ "area.les_u_vykopavek.S.item0": {
+  "cz": "Cedule zakazuje vstup na archeologické vykopávky. <br> Musím se dozvědět, co skrývají!",
+  "en": "A sign forbids entry to the archaeological excavations. <br> I have to find out what they're hiding!"
+ },
+ "area.les_u_vykopavek.S.item1": {
+  "cz": "Nedávno zde archeologové odkrývali pozůstatky tvrze Lipina, která tady stávala.",
+  "en": "Archaeologists recently uncovered the remains of the Lipina fortress that used to stand here."
+ },
+ "area.vykopavky.name": {
+  "cz": "Vykopávky na bývalé Lipině",
+  "en": "Excavations at the former Lipina"
+ },
+ "area.vykopavky.N.pohled": {
+  "cz": "zpět do lesa",
+  "en": "back to the forest"
+ },
+ "area.vykopavky.E.pohled": {
+  "cz": "okolí vykopávek",
+  "en": "surroundings of the excavations"
+ },
+ "area.vykopavky.E.item0": {
+  "cz": "Lopatka zaražená v zemi. Vezmu si ji.",
+  "en": "A shovel stuck in the ground. I'll take it."
+ },
+ "area.vykopavky.W.item0": {
+  "cz": "Na zemi leží březová větev. V okolí plném smrků působí jako nezvaný vetřelec.",
+  "en": "A birch branch lies on the ground. Among all the spruces, it looks like an uninvited intruder."
+ },
+ "area.vykopavky.S.pohled": {
+  "cz": "opuštěné vykopávky",
+  "en": "abandoned excavations"
+ },
+ "area.vykopavky.S.item0": {
+  "cz": "Ve výkopu ležela stará vizitka <br><br> {img:assets/bgr/vykopavky/vizitka_hlina.png}{stopa} Získali jste stopu <span class='color-lighter-red'>Zašlá vizitka.</span>",
+  "en": "An old business card lay in the trench <br><br> {img:assets/bgr/vykopavky/vizitka_hlina.png}{stopa} You have found a clue: <span class='color-lighter-red'>Faded business card.</span>"
+ },
+ "area.vykopavky.S.item1": {
+  "cz": "V kameni se rýsuje zašlý středověký erb. Čas už ohlodal jeho obrysy. Nakreslím si ho.<br><br> {img:assets/bgr/vykopavky/kamen_erb.png}{stopa} Získali jste stopu <span class='color-lighter-red'>kamenný erb.</span>",
+  "en": "A faded medieval coat of arms is outlined in the stone. Time has worn away its contours. I'll sketch it.<br><br> {img:assets/bgr/vykopavky/kamen_erb.png}{stopa} You have found a clue: <span class='color-lighter-red'>stone coat of arms.</span>"
+ },
+ "area.upati_standlu.name": {
+  "cz": "Úpatí Štandlu",
+  "en": "Foot of Štandl"
+ },
+ "area.upati_standlu.N.pohled": {
+  "cz": "na lesní křižovatku",
+  "en": "to the forest crossroads"
+ },
+ "area.upati_standlu.E.pohled": {
+  "cz": "na vrchol štandlu",
+  "en": "to the summit of Štandl"
+ },
+ "area.upati_standlu.E.item0": {
+  "cz": "Cesta se vine vzhůru k vrcholu, pomalu mizí v šeru lesa.",
+  "en": "The path winds uphill to the summit, slowly vanishing into the gloom of the forest."
+ },
+ "area.upati_standlu.E.item1": {
+  "cz": "Na lesní lavičce zůstaly odložené prázdné lahve od piva.",
+  "en": "Empty beer bottles have been left on the forest bench."
+ },
+ "area.upati_standlu.S.pohled": {
+  "cz": "lesní pěšina",
+  "en": "forest footpath"
+ },
+ "area.lesni_pesina.name": {
+  "cz": "Lesní pěšina",
+  "en": "Forest footpath"
+ },
+ "area.lesni_pesina.N.pohled": {
+  "cz": "k úpatí Štandlu",
+  "en": "to the foot of Štandl"
+ },
+ "area.lesni_pesina.E.pohled": {
+  "cz": "březový les",
+  "en": "birch forest"
+ },
+ "area.lesni_pesina.E.item0": {
+  "cz": "Pěkně naskládané hromady dřeva.",
+  "en": "Neatly stacked piles of firewood."
+ },
+ "area.lesni_pesina.S.pohled": {
+  "cz": "dál pěšinou",
+  "en": "further along the footpath"
+ },
+ "area.lesni_pesina.S.item0": {
+  "cz": "Na zetlelém pařezu stojí prázdné krmítko. Nikdo ho už nedoplňuje a ani ptáci se sem dávno nevracejí.",
+  "en": "An empty bird feeder stands on a rotten stump. Nobody refills it anymore, and the birds haven't come back here for a long time."
+ },
+ "area.prudky_svah.name": {
+  "cz": "U potoka",
+  "en": "By the stream"
+ },
+ "area.prudky_svah.N.pohled": {
+  "cz": "do prudkého svahu",
+  "en": "into the steep slope"
+ },
+ "area.prudky_svah.N.item0": {
+  "cz": "Strmý svah plný kamenů a kořenů. Tudy cesta nevede.",
+  "en": "A steep slope full of rocks and roots. The path doesn't lead this way."
+ },
+ "area.prudky_svah.E.pohled": {
+  "cz": "dále kolem štandlu",
+  "en": "further around Štandl"
+ },
+ "area.prudky_svah.W.item0": {
+  "cz": "Starodávný vůz, zdá se být stále používaný.",
+  "en": "An ancient cart, it still seems to be in use."
+ },
+ "area.prudky_svah.W.item1": {
+  "cz": "Hraniční kámen, ten musí být nejméně 200 let starý.",
+  "en": "A boundary stone, it must be at least 200 years old."
+ },
+ "area.prudky_svah.S.pohled": {
+  "cz": "potok",
+  "en": "stream"
+ },
+ "area.prudky_svah.S.item0": {
+  "cz": "Chladivá voda potoka příjemně zurčí mezi kameny.",
+  "en": "The cool water of the stream murmurs pleasantly among the stones."
+ },
+ "area.prudky_svah.S.item1": {
+  "cz": "Přes vodu se ke kříži nedostanu. Škoda.",
+  "en": "I can't get across the water to the cross. Too bad."
+ },
+ "area.pod_standlem.name": {
+  "cz": "Pod Štandlem",
+  "en": "Below Štandl"
+ },
+ "area.pod_standlem.N.pohled": {
+  "cz": "zarostlá louka",
+  "en": "overgrown meadow"
+ },
+ "area.pod_standlem.N.item0": {
+  "cz": "Starý kamenný pomník, nikdo neví, kdo ho sem postavil ",
+  "en": "An old stone monument, nobody knows who built it. "
+ },
+ "area.pod_standlem.N.item1": {
+  "cz": "Ve spodní části se za volným kamenem nacházelo velké množství keramických střepů. Vypadají velmi staře. <br><br>{img:assets/bgr/pod_standlem/strepy_skala.png}",
+  "en": "In the lower part, behind a loose stone, there was a large number of ceramic shards. They look very old. <br><br>{img:assets/bgr/pod_standlem/strepy_skala.png}"
+ },
+ "area.pod_standlem.E.pohled": {
+  "cz": "přes most do místku",
+  "en": "across the bridge to Místek"
+ },
+ "area.pod_standlem.E.item0": {
+  "cz": "Starý kamenný mostek se klene nad šumícím potokem. Cesta vede do Místku.",
+  "en": "An old stone bridge arches over the rushing stream. The path leads to Místek."
+ },
+ "area.pod_standlem.E.item1": {
+  "cz": "Ve dne je tu světla dost.",
+  "en": "There's enough light here during the day."
+ },
+ "area.pod_standlem.S.pohled": {
+  "cz": "lesní cesta podél potoka",
+  "en": "forest path along the stream"
+ },
+ "area.vrchol_standlu.name": {
+  "cz": "Vrchol Štandlu",
+  "en": "Summit of Štandl"
+ },
+ "area.vrchol_standlu.N.pohled": {
+  "cz": "cesta dolů z vrcholu",
+  "en": "path down from the summit"
+ },
+ "area.vrchol_standlu.N.item0": {
+  "cz": "Zvláštně navršené balvany. Možná to jsou poslední zbytky hradu.",
+  "en": "Strangely piled-up boulders. Maybe they are the last remains of the castle."
+ },
+ "area.vrchol_standlu.N.item1": {
+  "cz": "Z hrubě otesaných kmenů někdo vztyčil dřevěný kříž.",
+  "en": "Someone has erected a wooden cross from roughly hewn logs."
+ },
+ "area.vrchol_standlu.E.pohled": {
+  "cz": "val",
+  "en": "rampart"
+ },
+ "area.vrchol_standlu.W.pohled": {
+  "cz": "k úpatí štandlu",
+  "en": "to the foot of Štandl"
+ },
+ "area.vrchol_standlu.W.item0": {
+  "cz": "Zrezivělé zábradlí se třese při lehkém doteku. Za ním je hluboká jáma - místo, kde kdysi stávala pevnost Štandl.",
+  "en": "The rusty railing shakes at the lightest touch. Behind it is a deep pit – the place where the Štandl fortress once stood."
+ },
+ "area.vrchol_standlu.S.pohled": {
+  "cz": "k informační ceduli",
+  "en": "to the information board"
+ },
+ "area.informacni_cedule.name": {
+  "cz": "Informační cedule",
+  "en": "Information board"
+ },
+ "area.informacni_cedule.E.pohled": {
+  "cz": "postojení",
+  "en": "a place to pause"
+ },
+ "area.informacni_cedule.E.item0": {
+  "cz": "Po kamenných schodech se dá dostat na druhou stranu valu.",
+  "en": "Stone steps lead to the other side of the rampart."
+ },
+ "area.informacni_cedule.E.item1": {
+  "cz": "V listí leží starý turistický batoh. Působí dojmem, jako by ho někdo odložil jen na chvíli... ale k jeho návratu už nedošlo.",
+  "en": "An old hiking backpack lies in the leaves. It looks as if someone had put it down just for a moment... but they never came back for it."
+ },
+ "area.informacni_cedule.W.pohled": {
+  "cz": "zatarasená chodba",
+  "en": "blocked passage"
+ },
+ "area.informacni_cedule.W.item0": {
+  "cz": "Chodba ve skále je zatarasena mříží. <br>Už se do ní nedá dostat. <br><br>{img:../assets/bgr/informacni_cedule/chodba_detail.png|assets/bgr/informacni_cedule/chodba_detail.png}",
+  "en": "The passage in the rock is blocked by a grate. <br>There is no way into it anymore. <br><br>{img:../assets/bgr/informacni_cedule/chodba_detail.png|assets/bgr/informacni_cedule/chodba_detail.png}"
+ },
+ "area.informacni_cedule.W.item1": {
+  "cz": "Neotevřená láhev Radegasta. S touto etiketou se však neprodává už nejméně 20 let.",
+  "en": "An unopened bottle of Radegast. But this label hasn't been sold for at least 20 years."
+ },
+ "area.informacni_cedule.S.pohled": {
+  "cz": "informační cedule",
+  "en": "information board"
+ },
+ "area.informacni_cedule.S.item0": {
+  "cz": "V rohu informační cedule se skrývala skrčená mapa.",
+  "en": "A crumpled map was hidden in the corner of the information board."
+ },
+ "area.pred_tvari.name": {
+  "cz": "Za valem",
+  "en": "Behind the rampart"
+ },
+ "area.pred_tvari.E.pohled": {
+  "cz": "strmý svah",
+  "en": "steep slope"
+ },
+ "area.pred_tvari.E.item0": {
+  "cz": "Starodávná kovová lucerna, už je nepoužitelná.",
+  "en": "An antique metal lantern, no longer usable."
+ },
+ "area.pred_tvari.S.pohled": {
+  "cz": "k lavičce",
+  "en": "to the bench"
+ },
+ "area.pred_tvari.S.item0": {
+  "cz": "Uprostřed strmého lesního svahu stojí osamělá, ztrouchnivělá lavička. Kdysi z ní byl krásný výhled.",
+  "en": "In the middle of a steep forest slope stands a lonely, rotting bench. It once offered a beautiful view."
+ },
+ "area.kamenny_erb.name": {
+  "cz": "U velkého balvanu",
+  "en": "By the large boulder"
+ },
+ "area.kamenny_erb.N.pohled": {
+  "cz": "zpět k vrcholu",
+  "en": "back to the summit"
+ },
+ "area.kamenny_erb.E.pohled": {
+  "cz": "roklina",
+  "en": "ravine"
+ },
+ "area.kamenny_erb.E.item0": {
+  "cz": "Terén zde prudce klesá, nedá se tudy jít.",
+  "en": "The terrain drops steeply here, you can't go this way."
+ },
+ "area.kamenny_erb.W.pohled": {
+  "cz": "k balvanu",
+  "en": "to the boulder"
+ },
+ "area.kamenny_erb.W.item0": {
+  "cz": "Na balvanu je cosi vytesáno. <br>Musím to prozkoumat podrobněji.",
+  "en": "Something is carved into the boulder. <br>I need to examine it more closely."
+ },
+ "area.kamenny_erb.S.item0": {
+  "cz": "Cestu blokuje starý spadlý strom.",
+  "en": "An old fallen tree blocks the way."
+ },
+ "area.kamenna_tvar.name": {
+  "cz": "Kamenná tvář",
+  "en": "Stone face"
+ },
+ "area.kamenna_tvar.N.pohled": {
+  "cz": "pohled vedle kamene",
+  "en": "view beside the rock"
+ },
+ "area.kamenna_tvar.E.pohled": {
+  "cz": "zpátky",
+  "en": "back"
+ },
+ "area.kamenna_tvar.W.pohled": {
+  "cz": "kamenná tvář",
+  "en": "stone face"
+ },
+ "area.kamenna_tvar.W.item0": {
+  "cz": "Tajemná tvář vytesaná do skály.",
+  "en": "A mysterious face carved into the rock."
+ },
+ "area.kamenna_tvar.W.item1": {
+  "cz": "V kameni je klíčová dírka. <br>",
+  "en": "There's a keyhole in the stone. <br>"
+ },
+ "area.jeskyne.name": {
+  "cz": "Jeskyně ve Štandlu",
+  "en": "Cave in Štandl"
+ },
+ "area.jeskyne.N.pohled": {
+  "cz": "zbrojnice",
+  "en": "armoury"
+ },
+ "area.jeskyne.N.item0": {
+  "cz": "Na počest krále Attily zde jeho věrní spolubojovníci zanechali své zbraně. Kupodivu jsou stále v dobrém stavu.",
+  "en": "In honour of King Attila, his loyal comrades-in-arms left their weapons here. Remarkably, they are still in good condition."
+ },
+ "area.jeskyne.E.pohled": {
+  "cz": "ven z jeskyně",
+  "en": "out of the cave"
+ },
+ "area.jeskyne.W.pohled": {
+  "cz": "tajemství ve štandlu",
+  "en": "the secret in Štandl"
+ },
+ "area.jeskyne.W.item0": {
+  "cz": "Kniha - deník Černé Barbory",
+  "en": "A book – the diary of Black Barbora"
+ },
+ "area.jeskyne.W.item1": {
+  "cz": "Meč je stále velmi ostrý. Ten musel být Attilův oblíbený.",
+  "en": "The sword is still very sharp. It must have been Attila's favourite."
+ },
+ "area.jeskyne.W.item2": {
+  "cz": "Kostra Černé Barbory. Postihl ji strašný osud, avšak do poslední chvíle si zachovala víru v Boha.",
+  "en": "The skeleton of Black Barbora. A terrible fate befell her, yet until the last moment she kept her faith in God."
+ },
+ "area.jeskyne.W.item3": {
+  "cz": "Hrob krále Attily. Tak přece tady leží!",
+  "en": "The tomb of King Attila. So this is where he lies!"
+ },
+ "area.jeskyne.W.item4": {
+  "cz": "Poklad krále Attily. Zas tak obrovský není.",
+  "en": "King Attila's treasure. It's not that huge after all."
+ },
+ "area.jeskyne.S.pohled": {
+  "cz": "pavouk",
+  "en": "spider"
+ },
+ "area.jeskyne.S.item0": {
+  "cz": "Dobroduh zde našel svůj konec. Leží tu již věky.",
+  "en": "A wanderer met his end here. He has been lying here for ages."
+ },
+ "area.konec.N.pohled": {
+  "cz": "temnota",
+  "en": "darkness"
+ },
+ "area.konec.N.item0": {
+  "cz": "černočerná tma",
+  "en": "pitch-black darkness"
+ },
+ "area.mistecke_namesti.name": {
+  "cz": "Místecké náměstí",
+  "en": "Místek square"
+ },
+ "area.mistecke_namesti.E.pohled": {
+  "cz": "cesta do Frýdku",
+  "en": "road to Frýdek"
+ },
+ "area.mistecke_namesti.S.pohled": {
+  "cz": "socha panny marie",
+  "en": "statue of the Virgin Mary"
+ },
+ "area.mistecke_namesti.N.pohled": {
+  "cz": "budovy na místeckém naměstí",
+  "en": "buildings on Místek square"
+ },
+ "area.mistecke_namesti.W.pohled": {
+  "cz": "průchod ke štandlu",
+  "en": "passage to Štandl"
+ },
+ "area.mistecke_namesti.W.item0": {
+  "cz": "Na balkóně tohoto domu promluvil dne 3. ledna 1990 prezident Václav Havel",
+  "en": "On the balcony of this house, President Václav Havel spoke on 3 January 1990."
+ },
+ "area.socha_marie.name": {
+  "cz": "Socha Panny Marie",
+  "en": "Statue of the Virgin Mary"
+ },
+ "area.socha_marie.N.pohled": {
+  "cz": "reliéf na soše",
+  "en": "relief on the statue"
+ },
+ "area.socha_marie.N.item0": {
+  "cz": "Na sloupu je výrazný reliéf dubového listu, raději si jej zaznamenám.{stopa} Získali jste stopu <span class='color-lighter-red'>Dubový list.</span>",
+  "en": "There is a striking oak-leaf relief on the column, I'd better make a note of it.{stopa} You have found a clue: <span class='color-lighter-red'>Oak leaf.</span>"
+ },
+ "area.socha_marie.E.pohled": {
+  "cz": "okolí sochy",
+  "en": "around the statue"
+ },
+ "area.socha_marie.W.pohled": {
+  "cz": "do středu naměstí",
+  "en": "to the middle of the square"
+ },
+ "area.socha_marie.S.pohled": {
+  "cz": "před sochou",
+  "en": "in front of the statue"
+ },
+ "area.frydecky_zamek.name": {
+  "cz": "Frýdecký zámek",
+  "en": "Frýdek Castle"
+ },
+ "area.frydecky_zamek.E.pohled": {
+  "cz": "zámecká zahrada",
+  "en": "castle garden"
+ },
+ "area.frydecky_zamek.S.pohled": {
+  "cz": "na nádvoří zámku",
+  "en": "to the castle courtyard"
+ },
+ "area.frydecky_zamek.N.pohled": {
+  "cz": "do města",
+  "en": "to the town"
+ },
+ "area.frydecky_zamek.N.item0": {
+  "cz": "Cesta vede dále do Frýdku.",
+  "en": "The road leads on to Frýdek."
+ },
+ "area.frydecky_zamek.W.pohled": {
+  "cz": "zámeckým parkem do místku",
+  "en": "through the castle park to Místek"
+ },
+ "area.zamek_nadvori.name": {
+  "cz": "Zámek nádvoří",
+  "en": "Castle courtyard"
+ },
+ "area.zamek_nadvori.E.pohled": {
+  "cz": "bránou na náměstí",
+  "en": "through the gate to the square"
+ },
+ "area.zamek_nadvori.S.pohled": {
+  "cz": "zámecké nádvoří",
+  "en": "castle courtyard"
+ },
+ "area.zamek_nadvori.S.item0": {
+  "cz": "Nádvoří zeje prázdnotou.",
+  "en": "The courtyard is yawning empty."
+ },
+ "area.zamek_nadvori.W.pohled": {
+  "cz": "k věži",
+  "en": "to the tower"
+ },
+ "area.zamek_nadvori.W.item0": {
+  "cz": "Věž frýdeckého zámku. Vznikla při přestavbě zámku po roce 1688.",
+  "en": "The tower of Frýdek Castle. It was built during the reconstruction of the castle after 1688."
+ },
+ "area.zamek_nadvori.N.pohled": {
+  "cz": "před frýdecký zámek",
+  "en": "in front of Frýdek Castle"
+ },
+ "area.vez.name": {
+  "cz": "Zámecká věž",
+  "en": "Castle tower"
+ },
+ "area.vez.W.pohled": {
+  "cz": "stěna pod věží",
+  "en": "wall beneath the tower"
+ },
+ "area.vez.W.item0": {
+  "cz": "Na jedné cihle je vytesaný symbol, který připomíná královskou korunu. Nakreslím si to. {stopa} Získali jste stopu <span class='color-lighter-red'>Královská koruna</span>",
+  "en": "A symbol resembling a royal crown is carved on one of the bricks. I'll sketch it. {stopa} You have found a clue: <span class='color-lighter-red'>Royal crown</span>"
+ },
+ "area.vez.S.pohled": {
+  "cz": "vedle věže vlevo",
+  "en": "beside the tower, left"
+ },
+ "area.vez.N.pohled": {
+  "cz": "vedle věže vpravo",
+  "en": "beside the tower, right"
+ },
+ "area.vez.E.pohled": {
+  "cz": "zpět na nádvoří",
+  "en": "back to the courtyard"
+ },
+ "area.zamek_namesti.name": {
+  "cz": "Zámecké náměstí",
+  "en": "Castle square"
+ },
+ "area.zamek_namesti.E.pohled": {
+  "cz": "ke kostelu",
+  "en": "to the church"
+ },
+ "area.zamek_namesti.S.pohled": {
+  "cz": "budovy",
+  "en": "buildings"
+ },
+ "area.zamek_namesti.N.pohled": {
+  "cz": "kašna",
+  "en": "fountain"
+ },
+ "area.zamek_namesti.N.item0": {
+  "cz": "Kašna se sochou sv. Floriána. <br>V kašně plave několik listů a větviček. Voda je ale čistá.",
+  "en": "A fountain with a statue of St. Florian. <br>A few leaves and twigs float in the fountain. The water is clean, though."
+ },
+ "area.zamek_namesti.N.item1": {
+  "cz": "Svatojánská věž se tyčí nad náměstím.",
+  "en": "St. John's Tower rises above the square."
+ },
+ "area.zamek_namesti.W.pohled": {
+  "cz": "do zámku",
+  "en": "to the castle"
+ },
+ "area.zamek_namesti.W.item0": {
+  "cz": "Frýdecký zámek, stojí zde již od druhé poloviny 13. století.",
+  "en": "Frýdek Castle, it has stood here since the second half of the 13th century."
+ },
+ "area.kostel_josta.name": {
+  "cz": "Kostel sv. Jošta",
+  "en": "Church of St. Jošt"
+ },
+ "area.kostel_josta.E.pohled": {
+  "cz": "vstup do kostela",
+  "en": "church entrance"
+ },
+ "area.kostel_josta.E.item0": {
+  "cz": "Pozdně renesanční stavba z roku 1612. <br> Okolní park do konce 19. století sloužil jako hřbitov.",
+  "en": "A late Renaissance building from 1612. <br> Until the end of the 19th century, the surrounding park served as a cemetery."
+ },
+ "area.kostel_josta.E.item1": {
+  "cz": "Socha sv. Barbory, původně byla umístěna u vstupu na městský hřbitov.",
+  "en": "A statue of St. Barbara, originally placed at the entrance to the town cemetery."
+ },
+ "area.kostel_josta.S.pohled": {
+  "cz": "okolo kostela",
+  "en": "around the church"
+ },
+ "area.kostel_josta.N.pohled": {
+  "cz": "po schodišti na náměstí",
+  "en": "up the stairs to the square"
+ },
+ "area.kostel_josta.N.item0": {
+  "cz": "Statný kaštan, jistě toho mnoho pamatuje.",
+  "en": "A sturdy chestnut tree, it surely remembers a lot."
+ },
+ "area.kostel_josta.W.pohled": {
+  "cz": "na místecké naměstí",
+  "en": "to Místek square"
+ },
+ "area.kostel_josta.W.item0": {
+  "cz": "Chodník vede do Místku",
+  "en": "The pavement leads to Místek"
+ },
+ "area.vedle_kostela.name": {
+  "cz": "Vedle kostela sv. Jošta",
+  "en": "Beside the Church of St. Jošt"
+ },
+ "area.vedle_kostela.E.pohled": {
+  "cz": "stará škola",
+  "en": "old school"
+ },
+ "area.vedle_kostela.S.pohled": {
+  "cz": "socha sv. Floriána",
+  "en": "statue of St. Florian"
+ },
+ "area.vedle_kostela.S.item0": {
+  "cz": "Socha patrona hasičů, sv. Floriána",
+  "en": "A statue of the patron saint of firefighters, St. Florian"
+ },
+ "area.vedle_kostela.N.pohled": {
+  "cz": "náhrobní kámen",
+  "en": "gravestone"
+ },
+ "area.vedle_kostela.N.item0": {
+  "cz": "Na náhrobním kameni je velký, kamenný kříž. <br>Nakreslím si ho.<br><br> {img:assets/bgr/jost_hrob/nahrobek.png} {stopa} Získali jste stopu <span class='color-lighter-red'>kříž.</span>",
+  "en": "There is a large stone cross on the gravestone. <br>I'll sketch it.<br><br> {img:assets/bgr/jost_hrob/nahrobek.png} {stopa} You have found a clue: <span class='color-lighter-red'>cross.</span>"
+ },
+ "area.vedle_kostela.W.pohled": {
+  "cz": "zpět ke vchodu do kostela",
+  "en": "back to the church entrance"
+ },
+ "area.u_muzea.name": {
+  "cz": "U muzea",
+  "en": "At the museum"
+ },
+ "area.u_muzea.N.pohled": {
+  "cz": "dveře do muzea",
+  "en": "museum door"
+ },
+ "area.u_muzea.N.item0": {
+  "cz": "Muzeum je otevřeno.",
+  "en": "The museum is open."
+ },
+ "area.u_muzea.S.pohled": {
+  "cz": "cihlové kruhy",
+  "en": "brick circles"
+ },
+ "area.u_muzea.S.item0": {
+  "cz": "Stará kniha o Štandlu",
+  "en": "An old book about Štandl"
+ },
+ "area.u_muzea.W.pohled": {
+  "cz": "k frýdeckému zámku",
+  "en": "to Frýdek Castle"
+ },
+ "item.vizitka.name": {
+  "cz": "Vizitka",
+  "en": "Business card"
+ },
+ "item.vizitka.tooltip": {
+  "cz": "Zašlá vizitka, jméno někdo začmáral, ale adresa směřuje někam pod zámek do Frýdku.",
+  "en": "A faded business card. Someone has scribbled out the name, but the address points somewhere below the castle in Frýdek."
+ },
+ "item.cerny_klic.name": {
+  "cz": "Černý klíč",
+  "en": "Black key"
+ },
+ "item.cerny_klic.tooltip": {
+  "cz": "Starý, černý klíč. Nalezený archeologem při vykopávkách pod Štandlem.",
+  "en": "An old, black key. Found by an archaeologist during the excavations below Štandl."
+ },
+ "item.dubovy_list.name": {
+  "cz": "Nákres listu",
+  "en": "Leaf sketch"
+ },
+ "item.dubovy_list.tooltip": {
+  "cz": "Nákres reliéfu dubového listu, který byl na soše na místeckém náměstí.",
+  "en": "A sketch of the oak-leaf relief that was on the statue in Místek square."
+ },
+ "item.kriz_z_hrobu.name": {
+  "cz": "Nákres kříže",
+  "en": "Cross sketch"
+ },
+ "item.kriz_z_hrobu.tooltip": {
+  "cz": "Nákres Kříže z náhrobku u kostela sv. Jošta.",
+  "en": "A sketch of the cross from the gravestone by the Church of St. Jošt."
+ },
+ "item.koruna.name": {
+  "cz": "Nákres koruny",
+  "en": "Crown sketch"
+ },
+ "item.koruna.tooltip": {
+  "cz": "Královská koruna, která byla vyryta na zámecké věži.",
+  "en": "The royal crown that was carved into the castle tower."
+ },
+ "item.mapa.name": {
+  "cz": "Mapa",
+  "en": "Map"
+ },
+ "item.mapa.tooltip": {
+  "cz": "Mapa z vrcholu Štandlu.",
+  "en": "A map from the summit of Štandl."
+ },
+ "item.erb.name": {
+  "cz": "Nákres Erbu",
+  "en": "Coat of arms sketch"
+ },
+ "item.erb.tooltip": {
+  "cz": "Erb z kamene, nalezený ve vykopávkách staré Lipiny.",
+  "en": "A coat of arms from a stone, found in the excavations of old Lipina."
+ },
+ "item.strep.name": {
+  "cz": "Střepy",
+  "en": "Shards"
+ },
+ "item.strep.tooltip": {
+  "cz": "Keramické střepy, nalezené v kameném pomníku.",
+  "en": "Ceramic shards found in the stone monument."
+ },
+ "item.lopatka.name": {
+  "cz": "Lopatka",
+  "en": "Shovel"
+ },
+ "item.lopatka.tooltip": {
+  "cz": "Stará lopatka, nalezená u vykopávek.",
+  "en": "An old shovel found at the excavations."
+ },
+ "item.denik.name": {
+  "cz": "Deník",
+  "en": "Diary"
+ },
+ "item.denik.tooltip": {
+  "cz": "Potrhaný deník, ležel u těla Černé Barbory v tajné jeskyni.",
+  "en": "A tattered diary that lay by the body of Black Barbora in the secret cave."
+ },
+ "item.kniha.name": {
+  "cz": "Kniha",
+  "en": "Book"
+ },
+ "item.kniha.tooltip": {
+  "cz": "Starodávná kniha o Štandlu. <br>Je v ní mnoho zajímavostí a pověstí.",
+  "en": "An ancient book about Štandl. <br>It contains many interesting facts and legends."
+ },
+ "denik.1.den": {
+  "cz": "8. února 1728",
+  "en": "8 February 1728"
+ },
+ "denik.1.text": {
+  "cz": "Dnes jsem vstala před úsvitem a ve studených zdech kláštera se modlila za klid, který stále nepřichází. Při práci v kuchyni jsem opět cítila, že mé srdce patří jinam, a i když se snažím být poslušná, mé myšlenky utíkají ven z kláštera k životu, který jsem si nikdy nedovolila žít.",
+  "en": "Today I got up before dawn and prayed within the cold walls of the convent for a peace that still does not come. While working in the kitchen I again felt that my heart belongs elsewhere, and even though I try to be obedient, my thoughts escape beyond the convent to a life I never dared to live."
+ },
+ "denik.2.den": {
+  "cz": "9. února",
+  "en": "9 February"
+ },
+ "denik.2.text": {
+  "cz": "Matka představená dnes hovořila o ctnostech, ale každé její slovo mi připadalo jako další kámen na mé hrudi. V zahradě jsem se snažila najít pokoj, avšak přepadaly mě myšlenky na rytíře Harasovského a na to, zda jsem vůbec kdy byla určena k řeholnímu životu.",
+  "en": "Today the Mother Superior spoke of virtues, but every word of hers felt like another stone on my chest. In the garden I tried to find peace, yet thoughts of the knight Harasovský assailed me, and of whether I was ever meant for the religious life at all."
+ },
+ "denik.3.den": {
+  "cz": "10. února",
+  "en": "10 February"
+ },
+ "denik.3.text": {
+  "cz": "Dnes v noci mě probudil sen, v němž na mě někdo stále volal, a já pochopila, že již déle nemohu popírat volání svého srdce. S modlitbou na rtech, ale s neklidem v duši, jsem se rozhodla. Zítra opustím klášter! A budu hledat vlastní cestu mimo jeho zdi.",
+  "en": "Tonight a dream woke me, in which someone kept calling out to me, and I understood that I can no longer deny the call of my heart. With a prayer on my lips but unrest in my soul, I have made my decision. Tomorrow I will leave the convent! And I will seek my own path beyond its walls."
+ },
+ "denik.4.den": {
+  "cz": "11. února",
+  "en": "11 February"
+ },
+ "denik.4.text": {
+  "cz": "Utekla jsem z kláštera. Pod rouškou noci jsem došla až na Štandl, kde na mne měl čekat rytíř Harasovský. Teď sedím v tichu mezi chladnými kameny a čekám na něj. Proč stále nepřichází? Bojím se, že jsem udělala chybu.",
+  "en": "I escaped from the convent. Under cover of night I made my way to Štandl, where the knight Harasovský was supposed to be waiting for me. Now I sit in the silence among the cold stones and wait for him. Why does he still not come? I fear I have made a mistake."
+ },
+ "denik.5.den": {
+  "cz": "12. února",
+  "en": "12 February"
+ },
+ "denik.5.text": {
+  "cz": "Dnešní ráno bylo mrazivé, probudil mne silný vítr a když jsem otevřela oči, spatřila jsem podivného muže, který vypadal jako by přišel z jiné doby. Stál nehybně nade mnou a hlubokým hlasem mi řekl, abych našla jakýsi balvan. Za ním prý najdu své štěstí. Symbolům a klíči jenž mi předal však nerozumím.",
+  "en": "This morning was freezing; a strong wind woke me, and when I opened my eyes I saw a strange man who looked as though he had come from another age. He stood motionless above me and in a deep voice told me to find a certain boulder. Behind it, he said, I would find my happiness. I do not understand the symbols or the key he gave me."
+ },
+ "denik.6.den": {
+  "cz": "12. února - večer",
+  "en": "12 February – evening"
+ },
+ "denik.6.text": {
+  "cz": "Už se stmívalo, ale ten balvan jsem našla. Na něm byla podivná rytina, která mi připomínala obličej onoho záhadného muže. Po chvíli jsem nalezla klíčovou dírku, do které vpadl klíč. Hlavolam, co se objevil ale stále nemohu rozluštit.",
+  "en": "It was already growing dark, but I found the boulder. There was a strange carving on it that reminded me of the face of that mysterious man. After a while I found the keyhole, into which the key fitted. The puzzle that appeared, however, I still cannot solve."
+ },
+ "denik.7.den": {
+  "cz": "13.února",
+  "en": "13 February"
+ },
+ "denik.7.text": {
+  "cz": "Zkoušela jsem to celou noc, ale nakonec jsem to rozluštila! Vstoupila jsem do temné jeskyně. Uvnitř ležel hrob dávného krále obklopený poklady, jež se třpytily ve světle mé svíce. Vzala jsem si jen pár zlatých mincí. Když jsem se však obrátila k východu a vydala se zpět, čekalo mne strašné překvapení. Vchod se zavalil a já zůstala uvězněna.",
+  "en": "I tried all night, but in the end I solved it! I entered a dark cave. Inside lay the tomb of an ancient king surrounded by treasures glittering in the light of my candle. I took only a few gold coins. But when I turned to the exit and set off back, a terrible surprise awaited me. The entrance had collapsed and I remained trapped."
+ },
+ "denik.8.den": {
+  "cz": "14. února 1728",
+  "en": "14 February 1728"
+ },
+ "denik.8.text": {
+  "cz": "Už nevím, kolik hodin jsem tu, v naprosté temnotě, kde slyším jen vlastní dech a kapání vody. Modlím se, aby mě někdo našel, nebo aby se skála slitovala a znovu se otevřela, ale má víra se třese stejně jako ruce, kterými píšu tento poslední záznam. Má poslední svíce dohořívá… a až zhasne, zůstane jen tma.......",
+  "en": "I no longer know how many hours I have been here, in utter darkness, where I hear only my own breath and the dripping of water. I pray that someone will find me, or that the rock will take pity and open again, but my faith trembles just as the hands with which I write this last entry do. My last candle is burning down… and when it goes out, only darkness will remain......."
+ },
+ "kniha.1.den": {
+  "cz": "O štandlu",
+  "en": "About Štandl"
+ },
+ "kniha.1.text": {
+  "cz": "Tajemný zalesněný vrch Štandl (lidově Štandel) se nachází 1,7km vzdušnou čarou západně od centra města Místek. Vrch je vysoký 350 m. n. m.<br>Na vrchol vedou dnes dvě hlavní cesty. Ta snadnější začíná na západním svahu kopce, druhá vede směrem od Místku z východu. Vrchol kopce a vlastně i hradní jádro obklopoval ze všech stran kruhový či oválný hluboký příkop s vyvýšeným valem. Dodnes je uprostřed jádra zakrytý vchod do podzemní chodby.",
+  "en": "The mysterious wooded hill of Štandl (colloquially Štandel) lies 1.7 km as the crow flies west of the centre of the town of Místek. The hill is 350 m above sea level.<br>Two main paths lead to the summit today. The easier one begins on the western slope of the hill, the other leads from the east, from Místek. The summit, and in fact the castle's core, was surrounded on all sides by a circular or oval deep moat with a raised rampart. To this day, the covered entrance to an underground passage lies in the middle of the core."
+ },
+ "kniha.2.den": {
+  "cz": "Zlatý poklad",
+  "en": "Golden treasure"
+ },
+ "kniha.2.text": {
+  "cz": "Kdysi dávno Štandl nestál, když zemřel slavný hunský kmenový náčelník Attila, položili jej ve zlaté rakvi spolu s mnoha poklady na tomto místě do země a vojáci po několik týdnů nosili hlínu a kameny, ze které nasypali mohylu, dnešní Štandl. Naposledy se pokoušel najít tento poklad jeden starousedlík ze Sviadnova.",
+  "en": "Long ago Štandl did not exist. When the famous Hun tribal chieftain Attila died, he was laid in the ground in a golden coffin together with many treasures at this place, and for several weeks soldiers carried earth and stones, from which they piled up a burial mound – today's Štandl. The last person to try to find this treasure was an old-timer from Sviadnov."
+ },
+ "kniha.3.den": {
+  "cz": "Černá paní Barbora",
+  "en": "Black Lady Barbora"
+ },
+ "kniha.3.text": {
+  "cz": "Na jihovýchodním svahu Štandlu stávala velká skála, dnes z ní zbyl menší kousek. Kdysi byl na skále k přečtení nápis \"Černá paní Barbora\". Pod skálou má být zasypaná jeskyně, ve které se ukrývala uprchlá mladá jeptiška, černých vlasů a modrých očí. Hukvaldský hradní hejtman rytíř Harasovský ji svedl a zde se milenci scházeli. Jeptiška hořce litovala porušení řeholního slibu a když pro ni hejtman jel, aby si ji odvedl na hrad, strhla se strašná bouře a za rachocení skal jeskyně zmizela. Ještě dlouho slyšeli jeptišku naříkat v podzemí. V dnešní době je možné v určitém místě najít velký balvan s podivnou rytinou, která připomíná obličej a zvláštní klíčovou dírkou, ke které nikdo nemá klíč...",
+  "en": "On the south-eastern slope of Štandl there once stood a large rock, of which only a smaller piece remains today. An inscription \"Black Lady Barbora\" could once be read on the rock. Beneath the rock there is said to be a buried cave in which a young runaway nun with black hair and blue eyes hid. The captain of Hukvaldy Castle, the knight Harasovský, seduced her and the lovers met here. The nun bitterly regretted breaking her monastic vow, and when the captain came for her to take her to the castle, a terrible storm broke out and the cave vanished amid the rumbling of rocks. For a long time afterwards the nun could be heard lamenting underground. Nowadays, at a certain place, one can find a large boulder with a strange carving resembling a face and a peculiar keyhole, for which nobody has a key..."
+ },
+ "kniha.4.den": {
+  "cz": "Propadlý hrad",
+  "en": "The collapsed castle"
+ },
+ "kniha.4.text": {
+  "cz": "Ještě kolem roku 1850 byly na Štandlu ke spatření skrovné zbytky zdí zaniklého hrádku, nazývaného údajně Friedeke nebo Na zámčisku. V nepřístupném podzemí má být ukryt poklad a velká jáma na vrcholu je prý zbytkem po propadlém hradu a jeho sklepeních. Archeologickým výzkumem zde byla potvrzena podzemní chodba.",
+  "en": "As late as around 1850, meagre remains of the walls of a vanished little castle, allegedly called Friedeke or Na zámčisku, could still be seen on Štandl. A treasure is said to be hidden in the inaccessible underground, and the large pit at the summit is supposedly the remnant of the collapsed castle and its cellars. Archaeological research has confirmed an underground passage here."
+ }
+}
