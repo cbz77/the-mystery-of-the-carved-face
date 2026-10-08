@@ -12,8 +12,8 @@ if(saved_game == null || saved_game == "") this.localStorage.setItem("saved_game
 
 //mapa preklad
 
-const lang = document.documentElement.lang;
-const map_url = "";
+let lang = document.documentElement.lang;
+let map_url = "";
 if (lang === 'cs') {
   map_url = "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>";
 } else if (lang === 'en') {
