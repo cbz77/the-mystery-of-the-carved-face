@@ -17,9 +17,6 @@ if(local_lang == 'cz'){
 	mapa_url = "<img src='../assets/images/inventory/mapa-en.png' class='inventory_img'>";
 }
 
-console.log(local_lang)
-console.log(mapa_url)
-
 // Definice předmětů v inventáři pro snazší správu (id, jméno, ikona)
 const INVENTORY_ITEMS = {
 	'vizitka': { name: 'item.vizitka.name', icon: 'fa-address-card', tooltip: 'item.vizitka.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/vizitka.png' class='inventory_img'>" },
