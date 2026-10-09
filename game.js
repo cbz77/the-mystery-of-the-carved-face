@@ -647,13 +647,7 @@ function handleHotspotClick(item) {
  */
 function handlePolasekInteraction(item) {
 
-	console.log(item)
-	console.log(solvedPuzzles)
-	console.log(inventory)
-
 	if (inventory.includes('lopatka') && inventory.includes('strep')) {
-
-		console.log("polasek 1")
 		
 		showPopup(t('npc.both'));
 		
@@ -667,8 +661,6 @@ function handlePolasekInteraction(item) {
 	}
 	else if(inventory.includes('strep') && !solvedPuzzles.includes('lopatka')) {
 
-		console.log("polasek 2")
-
 		showPopup(t('npc.shards_first'));
 		
 		removeItem('strep');
@@ -676,16 +668,12 @@ function handlePolasekInteraction(item) {
 	}
 	else if (inventory.includes('lopatka') && !solvedPuzzles.includes('strep')) {
 
-		console.log("polasek 3")
-
 		showPopup(t('npc.shovel_first'));
 		
 		removeItem('lopatka');
 		solvedPuzzles.push('lopatka');
 	}
 	else if (inventory.includes('strep') && solvedPuzzles.includes('lopatka')) {
-
-		console.log("polasek 5")
 
 		showPopup(t('npc.shards_after_shovel'));
 		
@@ -695,8 +683,6 @@ function handlePolasekInteraction(item) {
 		solvedPuzzles.push('strep');
 	}
 	else if (inventory.includes('lopatka') && solvedPuzzles.includes('strep')) {
-		
-		console.log("polasek 6")
 
 		showPopup(t('npc.shovel_after_shards'));
 		
@@ -706,8 +692,6 @@ function handlePolasekInteraction(item) {
 		solvedPuzzles.push('lopatka');
 	}
 	else if (inventory.includes('cerny_klic')) {
-
-		console.log("polasek 7")
 
 		showPopup(t('npc.has_key'));
 
@@ -884,8 +868,6 @@ function updateView() {
 	const areaData = MAP[currentArea];
 	const viewData = areaData[currentDir];
 	const pohled = areaData[currentDir].pohled;
-
-	console.log(`Pohled: ${t(pohled)}`);
 
 	// 1. Zobrazení indikátoru načítání
 	loadingOverlay.style.display = 'flex';
@@ -1262,8 +1244,6 @@ function rotateWheel(event) {
     
     wheel.setAttribute('data-current-symbol', currentSymbol.toUpperCase());
     
-    // Volitelné: Pro zobrazení debug informací v konzoli
-    console.log(`Kotouč ${wheel.id} otočen na index ${currentIndex} (${degrees}deg). Vybraný symbol: ${currentSymbol}`);
 }
 
 const denik_zapisy = {
@@ -1376,7 +1356,7 @@ function handleKnihaClick(){
 		});
 
 	}else{
-		console.log("kniha jiz prectena");
+		/* console.log("kniha jiz prectena"); */
 	}
 
 	
