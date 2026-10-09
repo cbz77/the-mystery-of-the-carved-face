@@ -11,15 +11,18 @@ if(saved_game == null || saved_game == "") this.localStorage.setItem("saved_game
 
 let local_lang = localStorage.getItem('lang');
 let mapa_url = "";
+let vizitka_url = "";
 if(local_lang == 'cz'){
 	mapa_url = "<img src='../assets/images/inventory/mapa.png' class='inventory_img'>";
+	vizitka_url = "<img src='../assets/images/inventory/vizitka.png' class='inventory_img'>";
 }else if(local_lang == 'en'){
 	mapa_url = "<img src='../assets/images/inventory/mapa-en.png' class='inventory_img'>";
+	vizitka_url = "<img src='../assets/images/inventory/vizitka-en.png' class='inventory_img'>";
 }
 
 // Definice předmětů v inventáři pro snazší správu (id, jméno, ikona)
 const INVENTORY_ITEMS = {
-	'vizitka': { name: 'item.vizitka.name', icon: 'fa-address-card', tooltip: 'item.vizitka.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/vizitka.png' class='inventory_img'>" },
+	'vizitka': { name: 'item.vizitka.name', icon: 'fa-address-card', tooltip: 'item.vizitka.tooltip', type: "image", popupText: vizitka_url },
 	'cerny_klic': { name: 'item.cerny_klic.name', icon: 'fa-key', tooltip: 'item.cerny_klic.tooltip' },
 	'dubovy_list': { name: 'item.dubovy_list.name', icon: 'fa-leaf', tooltip: 'item.dubovy_list.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/list.png' class='inventory_img'>" },
 	'kriz_z_hrobu': { name: 'item.kriz_z_hrobu.name', icon: 'fa-cross', tooltip: 'item.kriz_z_hrobu.tooltip', type: "image", popupText: "<img src='../assets/images/inventory/kriz.png' class='inventory_img'>" },
